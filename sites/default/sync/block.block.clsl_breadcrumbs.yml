@@ -1,16 +1,16 @@
-uuid: d09d401f-fc0e-4938-8890-7c942fd9776f
+uuid: 9d432c89-f923-4255-9558-369f44c0e5fb
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - clsl
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
-region: breadcrumb
+id: clsl_breadcrumbs
+theme: clsl
+region: top
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

@@ -1,16 +1,16 @@
-uuid: d18f266d-7e95-412f-86f6-1caf6c6490ad
+uuid: c786da3c-203c-45a8-950f-63a3ee554faa
 langcode: en
 status: true
 dependencies:
   module:
     - search
   theme:
-    - bartik
+    - clsl
 _core:
   default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
-id: bartik_search
-theme: bartik
-region: sidebar_first
+id: clsl_search
+theme: clsl
+region: top
 weight: -1
 provider: null
 plugin: search_form_block

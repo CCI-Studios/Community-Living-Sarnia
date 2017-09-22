@@ -1,13 +1,13 @@
-uuid: e4c779c8-1a04-43f4-9212-791a97c063fe
+uuid: 403130b8-949d-4263-92c7-d5ff061366e3
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - clsl
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
-id: bartik_page_title
-theme: bartik
+id: clsl_page_title
+theme: clsl
 region: content
 weight: -50
 provider: null

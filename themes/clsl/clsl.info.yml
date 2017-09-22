@@ -1,0 +1,12 @@
+name: CLSL
+type: theme
+description: 'CLSL theme'
+core: 8.x
+libraries:
+  - clsl/global
+base theme: classy
+regions:
+  top: top
+  content: Content
+  footer: Footer
+

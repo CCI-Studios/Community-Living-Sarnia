@@ -1,4 +1,4 @@
-uuid: 5e89c2ae-6ffb-4f3c-8c97-f5710090bf33
+uuid: 590e697e-01cc-4444-be6f-08c7dcc3c098
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - clsl
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: bartik_footer
-theme: bartik
-region: footer_fifth
+id: clsl_footer
+theme: clsl
+region: top
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

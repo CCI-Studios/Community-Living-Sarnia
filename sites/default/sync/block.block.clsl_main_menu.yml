@@ -1,4 +1,4 @@
-uuid: d18c1c88-a0d8-4b6c-8903-b91ef316cf10
+uuid: 9a89481c-4b44-4061-99e2-2107b263b4fe
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - clsl
 _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: bartik_main_menu
-theme: bartik
-region: primary_menu
+id: clsl_main_menu
+theme: clsl
+region: top
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'

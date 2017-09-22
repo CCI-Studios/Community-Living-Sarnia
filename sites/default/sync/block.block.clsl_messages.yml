@@ -1,16 +1,16 @@
-uuid: cc31fea4-f97d-4dfa-8d89-94a9952fd036
+uuid: 92d54dca-61ff-4c14-9790-3254e29fdc46
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - clsl
 _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: bartik_messages
-theme: bartik
-region: highlighted
+id: clsl_messages
+theme: clsl
+region: top
 weight: 0
 provider: null
 plugin: system_messages_block
