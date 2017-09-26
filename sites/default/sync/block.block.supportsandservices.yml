@@ -1,0 +1,35 @@
+uuid: bc74d5fa-a7ca-43db-a917-f54fc026e18f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:home_widget:ecfffc5d-e139-4185-bea1-3f3b9d01f063'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: 'block--home-widget block--home-widget--supports-services'
+id: supportsandservices
+theme: clsl
+region: widgets
+weight: -6
+provider: null
+plugin: 'block_content:ecfffc5d-e139-4185-bea1-3f3b9d01f063'
+settings:
+  id: 'block_content:ecfffc5d-e139-4185-bea1-3f3b9d01f063'
+  label: 'Supports and Services'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

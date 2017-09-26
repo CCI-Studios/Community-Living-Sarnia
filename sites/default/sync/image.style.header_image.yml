@@ -1,0 +1,16 @@
+uuid: 408c0c15-05ea-4460-a0e6-1bf13a05c7c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: header_image
+label: 'Header image'
+effects:
+  d7728974-067c-4d1f-a498-0fe9b542c715:
+    uuid: d7728974-067c-4d1f-a498-0fe9b542c715
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1420
+      height: 620

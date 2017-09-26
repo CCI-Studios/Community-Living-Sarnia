@@ -1,0 +1,8 @@
+uuid: 99ebce7f-7068-477e-8aec-2be46f4d48d9
+langcode: en
+status: true
+dependencies: {  }
+id: event_teaser
+label: 'Event teaser'
+locked: false
+pattern: 'd M'

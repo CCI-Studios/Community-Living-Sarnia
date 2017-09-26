@@ -1,0 +1,35 @@
+uuid: 492f6ed0-5ae9-4d0d-83b0-daed0fb3d605
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0a2bd5a7-8667-4670-aca6-a064c61afef4'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: block--fee-for-service
+id: feeforserviceoptions
+theme: clsl
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:0a2bd5a7-8667-4670-aca6-a064c61afef4'
+settings:
+  id: 'block_content:0a2bd5a7-8667-4670-aca6-a064c61afef4'
+  label: 'Fee for Service Options'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,4 +1,4 @@
-uuid: 9d432c89-f923-4255-9558-369f44c0e5fb
+uuid: 9766992a-7855-4a59-9a59-524c1118254e
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - clsl
 _core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+  default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
 id: clsl_breadcrumbs
 theme: clsl
-region: top
-weight: 0
+region: content
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

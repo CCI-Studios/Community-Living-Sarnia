@@ -1,15 +1,21 @@
-uuid: 403130b8-949d-4263-92c7-d5ff061366e3
+uuid: 9660eefd-ca0c-4811-97b5-943d306ade78
 langcode: en
 status: true
 dependencies:
+  module:
+    - block_class
+    - system
   theme:
     - clsl
+third_party_settings:
+  block_class:
+    classes: ''
 _core:
-  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
 id: clsl_page_title
 theme: clsl
 region: content
-weight: -50
+weight: -3
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +23,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

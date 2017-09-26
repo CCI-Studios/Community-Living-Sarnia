@@ -1,0 +1,35 @@
+uuid: 3167934b-38d4-4d57-88aa-c0783a100f23
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:home_widget:3f4b32b9-a4e7-4a83-abfa-99f05090ce85'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: 'block--home-widget block--home-widget--donate'
+id: donate
+theme: clsl
+region: widgets
+weight: -5
+provider: null
+plugin: 'block_content:3f4b32b9-a4e7-4a83-abfa-99f05090ce85'
+settings:
+  id: 'block_content:3f4b32b9-a4e7-4a83-abfa-99f05090ce85'
+  label: Donate
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

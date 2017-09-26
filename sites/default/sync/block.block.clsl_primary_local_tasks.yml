@@ -1,0 +1,22 @@
+uuid: bac46279-4283-4d97-843e-56919a367c71
+langcode: en
+status: true
+dependencies:
+  theme:
+    - clsl
+_core:
+  default_config_hash: ddy1OsBbWxjwEI8VL1viD4I69qcLHOkul4BxbTqLBTs
+id: clsl_primary_local_tasks
+theme: clsl
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

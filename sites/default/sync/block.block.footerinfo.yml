@@ -1,0 +1,29 @@
+uuid: cabeab75-9770-48ae-a327-d1f968110f0e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8bb12367-a9c7-4765-9fe0-ca07d68e3a90'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: block--footer-info
+id: footerinfo
+theme: clsl
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:8bb12367-a9c7-4765-9fe0-ca07d68e3a90'
+settings:
+  id: 'block_content:8bb12367-a9c7-4765-9fe0-ca07d68e3a90'
+  label: 'Footer info'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

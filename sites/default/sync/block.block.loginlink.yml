@@ -1,0 +1,25 @@
+uuid: ccea136b-3ded-414d-96b3-8f4d85f56450
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:53720ed1-da3c-43b8-9056-7b9fde7b21e7'
+  module:
+    - block_content
+  theme:
+    - clsl
+id: loginlink
+theme: clsl
+region: top
+weight: -3
+provider: null
+plugin: 'block_content:53720ed1-da3c-43b8-9056-7b9fde7b21e7'
+settings:
+  id: 'block_content:53720ed1-da3c-43b8-9056-7b9fde7b21e7'
+  label: 'Login link'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

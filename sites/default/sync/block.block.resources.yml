@@ -1,0 +1,35 @@
+uuid: 12534e68-fe2c-462d-a1e4-41a2fd90e64d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:home_widget:b6f86631-f8ea-4f08-96a9-f83c34600cb9'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: 'block--home-widget block--home-widget--resources'
+id: resources
+theme: clsl
+region: widgets
+weight: -4
+provider: null
+plugin: 'block_content:b6f86631-f8ea-4f08-96a9-f83c34600cb9'
+settings:
+  id: 'block_content:b6f86631-f8ea-4f08-96a9-f83c34600cb9'
+  label: Resources
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

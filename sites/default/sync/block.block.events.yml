@@ -1,0 +1,35 @@
+uuid: 9187a73d-472f-4dfc-9c48-61873aceff8b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:home_widget:db541bdf-d1b9-4b3e-a045-8842308460ab'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: 'block--home-widget block--home-widget--events'
+id: events
+theme: clsl
+region: widgets
+weight: -7
+provider: null
+plugin: 'block_content:db541bdf-d1b9-4b3e-a045-8842308460ab'
+settings:
+  id: 'block_content:db541bdf-d1b9-4b3e-a045-8842308460ab'
+  label: Events
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

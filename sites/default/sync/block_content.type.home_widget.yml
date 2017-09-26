@@ -1,0 +1,8 @@
+uuid: 966f2806-b4c1-4a81-8bc3-2a08e2700311
+langcode: en
+status: true
+dependencies: {  }
+id: home_widget
+label: 'Home widget'
+revision: 0
+description: ''

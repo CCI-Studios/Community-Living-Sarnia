@@ -1,0 +1,20 @@
+uuid: 440712a6-f846-42cf-95ee-e1fd42bdcef4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - clsl
+id: searchform
+theme: clsl
+region: top
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

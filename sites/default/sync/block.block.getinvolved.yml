@@ -1,0 +1,35 @@
+uuid: a650a0d3-f2c5-411a-b706-befb8d6f4233
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:home_widget:72886662-c077-4f56-b9f8-21d32f82be5e'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: 'block--home-widget block--home-widget--get-involved'
+id: getinvolved
+theme: clsl
+region: widgets
+weight: -8
+provider: null
+plugin: 'block_content:72886662-c077-4f56-b9f8-21d32f82be5e'
+settings:
+  id: 'block_content:72886662-c077-4f56-b9f8-21d32f82be5e'
+  label: 'Get Involved'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

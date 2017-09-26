@@ -1,0 +1,22 @@
+uuid: cac06381-7154-48ac-9ce0-1177ab6955fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.home_widget
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.home_widget.body
+field_name: body
+entity_type: block_content
+bundle: home_widget
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

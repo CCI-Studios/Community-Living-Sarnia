@@ -1,0 +1,22 @@
+uuid: 83b81170-d26c-46be-a301-2d00523530fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.home_widget
+    - field.field.block_content.home_widget.body
+  module:
+    - text
+id: block_content.home_widget.default
+targetEntityType: block_content
+bundle: home_widget
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

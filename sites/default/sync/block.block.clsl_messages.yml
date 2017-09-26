@@ -1,4 +1,4 @@
-uuid: 92d54dca-61ff-4c14-9790-3254e29fdc46
+uuid: 1010d622-b64e-4b44-84dd-727d8c5778ad
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - clsl
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
 id: clsl_messages
 theme: clsl
-region: top
-weight: 0
+region: content
+weight: -4
 provider: null
 plugin: system_messages_block
 settings:

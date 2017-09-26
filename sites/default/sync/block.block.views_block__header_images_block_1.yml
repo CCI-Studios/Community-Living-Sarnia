@@ -1,0 +1,34 @@
+uuid: a703c158-9622-4537-9579-51d7d1780215
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.header_images
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: block--header-images
+id: views_block__header_images_block_1
+theme: clsl
+region: header
+weight: -5
+provider: null
+plugin: 'views_block:header_images-block_1'
+settings:
+  id: 'views_block:header_images-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

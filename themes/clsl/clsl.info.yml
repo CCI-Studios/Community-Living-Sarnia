@@ -6,7 +6,11 @@ libraries:
   - clsl/global
 base theme: classy
 regions:
+  logo: Logo
   top: top
+  navigation: Navigation
+  header: Header
+  widgets: Widgets
   content: Content
   footer: Footer
 

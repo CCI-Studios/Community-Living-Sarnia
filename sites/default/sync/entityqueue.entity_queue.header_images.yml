@@ -1,0 +1,28 @@
+uuid: 595f58d0-68ca-4109-86c6-765470f799ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: header_images
+label: 'Header images'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      header_image: header_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+    auto_entityqueue:
+      auto_add: 1
+      insert_front: 0
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false
