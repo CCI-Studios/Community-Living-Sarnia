@@ -13,4 +13,11 @@ regions:
   widgets: Widgets
   content: Content
   footer: Footer
-
+libraries-override:
+  classy/base:
+    css:
+      component:
+        css/components/button.css: false
+        css/components/link.css: false
+        css/components/links.css: false
+        css/components/menu.css: false

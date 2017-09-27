@@ -2,7 +2,11 @@ global:
   version: 1.x
   css:
     theme:
+      css/slick.css: {}
       css/importer.css: {}
+  js:
+    js/slick.js: {}
+    js/header-images.js: {}
   dependencies:
     - core/classList
-
+    - core/jquery

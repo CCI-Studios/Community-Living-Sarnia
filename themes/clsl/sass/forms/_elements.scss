@@ -1,0 +1,71 @@
+
+.layout-container
+{
+  button,
+  .button,
+  input[type="button"],
+  input[type="submit"]
+  {
+    border: 0;
+    background-color: #33add6;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0 20px;
+    min-width: 240px;
+    -webkit-appearance: none;
+    appearance: none;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 0;
+
+    &:before
+    {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border: 20px solid $blue;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+    }
+    &:after
+    {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border: 20px solid $blue;
+      border-left-color: transparent;
+      border-top-color: transparent;
+    }
+    &:hover
+    {
+      background-color: #a4d165;
+
+      &:before
+      {
+        border-right-color: $green;
+        border-top-color: $green;
+      }
+      &:after
+      {
+        border-right-color: $green;
+        border-bottom-color: $green;
+      }
+    }
+  }
+}

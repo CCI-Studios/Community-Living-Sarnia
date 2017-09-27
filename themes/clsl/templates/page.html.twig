@@ -45,18 +45,22 @@
 <div class="layout-container">
 
   <header>
-    {{ page.logo }}
-    {{ page.top }}
-    {{ page.navigation }}
+    <div class="layout-top">
+      {{ page.logo }}
+      {{ page.top }}
+      {{ page.navigation }}
+    </div>
     {{ page.header }}
   </header>
 
   <main>
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-widgets">
-      {{ page.widgets }}
-    </div>
+    {% if page.widgets %}
+      <div class="layout-widgets">
+        {{ page.widgets }}
+      </div>
+    {% endif %}
 
     <div class="layout-content">
       {{ page.content }}
@@ -67,10 +71,10 @@
   <footer>
     {{ page.footer }}
 
-    <div class="footer-bottom">
+    <div class="footer-bottom"><div>
       <div class="copyright">&copy; {{'Community Living Sarnia-Lambton'|t}} {{'today'|date('Y')}}</div>
       <div class="site-by-cci">Site by <a href="https://ccistudios.com" target="_blank">CCI Studios</a></div>
-    </div>
+    </div></div>
   </footer>
 
 </div>

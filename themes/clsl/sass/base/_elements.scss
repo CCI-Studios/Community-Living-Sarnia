@@ -1,0 +1,26 @@
+a
+{
+  color: $blue;
+  text-decoration: underline;
+}
+
+p
+{
+  margin-bottom: 1.5em;
+
+  &:last-child
+  {
+    margin-bottom: 0;
+  }
+}
+
+ul, ol
+{
+  margin-bottom: 1.5em;
+  margin-left: 25px;
+}
+
+li
+{
+  margin-bottom: 0.25em;
+}

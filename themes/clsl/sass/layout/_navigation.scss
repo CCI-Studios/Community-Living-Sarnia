@@ -1,0 +1,82 @@
+.block--main-menu
+{
+  float: right;
+  clear: right;
+}
+
+.menu--main
+{
+  .menu, li
+  {
+    margin: 0;
+    list-style: none;
+  }
+  & > .menu
+  {
+    & > li
+    {
+      display: block;
+      float: left;
+      position: relative;
+
+      & > a
+      {
+        color: $blue;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        padding: 30px 10px;
+        line-height: 1;
+      }
+      &:hover > a
+      {
+        color: $green;
+        font-weight: bold;
+        padding: 23px 10px 30px 10px;
+        border-bottom: 7px solid $blue;
+      }
+
+      & > .menu
+      {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 280px;
+        z-index: 100;
+
+        & > li
+        {
+          display: block;
+
+          & > a
+          {
+            display: block;
+            color: white;
+            font-size: 0.875em;
+            font-weight: bold;
+            background: $blue;
+            text-decoration: none;
+            padding: 16px 20px;
+            line-height: 1;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+            border-bottom: 1px solid #3dafd6;
+
+            &:hover
+            {
+              background: $green;
+            }
+          }
+          &:last-child > a
+          {
+            border-bottom: 0;
+          }
+        }
+      }
+      &:hover > .menu
+      {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+footer
+{
+  background: $blue;
+  color: white;
+  position: relative;
+  overflow: hidden;
+
+  &:before
+  {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -25%;
+    width: 150%;
+    height: 100%;
+    box-shadow: 0 0 12px rgba(0,0,0,0.25) inset;
+  }
+  & > div
+  {
+    position: relative;
+    z-index: 1;
+  }
+
+  a
+  {
+    color: white;
+  }
+}
+.region-footer
+{
+  padding: 70px 25px 50px 25px;
+  max-width: 1260px;
+  margin: 0 auto;
+
+  &:after
+  {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.block--footer-info
+{
+  float: left;
+  margin-right: 40px;
+  font-size: 0.875em;
+
+  p
+  {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+  }
+  .address
+  {
+    padding-left: 45px;
+    background: url(../images/icon-address.svg) no-repeat 2px top;
+  }
+  .phone
+  {
+    padding-left: 45px;
+    background: url(../images/icon-phone.svg) no-repeat 4px top;
+  }
+  .email
+  {
+    padding-left: 45px;
+    background: url(../images/icon-email.svg) no-repeat left top;
+  }
+}
+.block--footer-social-menu
+{
+  float: right;
+  margin: -12px 0 0 40px;
+
+  .menu
+  {
+    li
+    {
+      float: none;
+      margin: 0;
+      display: block;
+    }
+    a
+    {
+      color: white;
+      padding-left: 31px;
+      font-size: 1em;
+    }
+    .fb
+    {
+      background-image: url(../images/social-fb-white.svg);
+      background-position: 5px center;
+      padding-left: 31px;
+    }
+    .tw
+    {
+      background-image: url(../images/social-tw-white.svg);
+    }
+    .in
+    {
+      background-image: url(../images/social-in-white.svg);
+      padding-left: 31px;
+    }
+  }
+}
+.block--footer-menu
+{
+  overflow: hidden;
+
+  & > .menu
+  {
+    margin: 0;
+    list-style: none;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-gap: 40px;
+    font-size: 0.875em;
+
+    & > li
+    {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin-bottom: 8px;
+
+      & > a
+      {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      & > .menu
+      {
+        list-style: none;
+        margin: 4px 0 0 15px;
+
+        & > li
+        {
+          line-height: 1;
+          margin-bottom: 6px;
+        }
+      }
+    }
+    a
+    {
+      text-decoration: none;
+
+      &:hover
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.footer-bottom
+{
+  background: $green;
+  line-height: 48px;
+  font-size: 0.8em;
+  box-shadow: 0 0 12px rgba(0,0,0,0.25);
+
+  &:after
+  {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  & > div
+  {
+    padding: 0 25px;
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+  .copyright
+  {
+    float: left;
+  }
+  .site-by-cci
+  {
+    float: right;
+
+    a
+    {
+      text-decoration: none;
+
+      &:hover
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+}

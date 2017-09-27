@@ -1,0 +1,152 @@
+header
+{
+  background: white;
+  position: relative;
+}
+
+.layout-top
+{
+  max-width: 1260px;
+  padding: 0 25px;
+  margin: 0 auto;
+
+  &:after
+  {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.region-logo
+{
+  float: left;
+  padding-top: 25px;
+}
+
+.region-top
+{
+  float: right;
+  padding: 30px 0 10px 0;
+}
+
+.block--search
+{
+  float: left;
+
+  form
+  {
+    display: block;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    position: relative;
+    padding-right: 60px;
+
+    .form-search
+    {
+      background: transparent;
+      border: 0;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 12px;
+    }
+    .form-submit
+    {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: transparent url(../images/icon-search.svg) no-repeat center center;
+      border: 0;
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      width: 60px;
+      height: 40px;
+      font-size: 0;
+      color: transparent;
+      min-width: 0;
+      padding: 0;
+    }
+  }
+  
+  .form-item
+  {
+    margin: 0;
+  }
+}
+
+.block--social-menu
+{
+  float: left;
+  margin-left: 25px;
+
+  .menu
+  {
+    margin: 0;
+    list-style: none;
+    line-height: 42px;
+
+    li
+    {
+      margin: 0 30px 0 0;
+      padding: 0;
+      float: left;
+    }
+    a
+    {
+      display: block;
+      padding-left: 30px;
+      color: $blue;
+      font-weight: bold;
+      background-repeat: no-repeat;
+      background-position: left center;
+      text-decoration: none;
+      font-size: 0.9375em;
+
+      &:hover
+      {
+        text-decoration: underline;
+      }
+    }
+    .fb
+    {
+      background-image: url(../images/social-fb-blue.svg);
+      padding-left: 19px;
+    }
+    .tw
+    {
+      background-image: url(../images/social-tw-blue.svg);
+    }
+    .in
+    {
+      background-image: url(../images/social-in-blue.svg);
+      padding-left: 27px;
+    }
+  }
+}
+
+.block--login-link
+{
+  float: left;
+  line-height: 42px;
+
+  .login
+  {
+    display: block;
+    color: $blue;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 16px;
+    background: url(../images/icon-login.svg) no-repeat left center;
+    text-transform: uppercase;
+    font-size: 15px;
+
+    &:hover
+    {
+      text-decoration: underline;
+    }
+  }
+}

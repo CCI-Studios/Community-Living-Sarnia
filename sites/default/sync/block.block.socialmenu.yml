@@ -5,13 +5,17 @@ dependencies:
   config:
     - system.menu.social-menu
   module:
+    - block_class
     - system
   theme:
     - clsl
+third_party_settings:
+  block_class:
+    classes: block--social-menu
 id: socialmenu
 theme: clsl
 region: top
-weight: -4
+weight: -9
 provider: null
 plugin: 'system_menu_block:social-menu'
 settings:

@@ -5,9 +5,13 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - system
   theme:
     - clsl
+third_party_settings:
+  block_class:
+    classes: block--main-menu
 id: mainnavigation
 theme: clsl
 region: navigation

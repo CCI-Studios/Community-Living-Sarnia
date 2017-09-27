@@ -11,7 +11,7 @@ dependencies:
     - clsl
 third_party_settings:
   block_class:
-    classes: block--footer-social
+    classes: 'block--footer-social-menu block--social-menu'
 id: socialmenu_2
 theme: clsl
 region: footer

@@ -39,13 +39,16 @@ module:
   pathauto: 0
   quickedit: 0
   rdf: 0
-  search: 0
+  search_api: 0
+  search_api_db: 0
+  search_api_page: 0
   shortcut: 0
   system: 0
   taxonomy: 0
   text: 0
   token: 0
   toolbar: 0
+  twig_tweak: 0
   user: 0
   views_ui: 0
   webform: 0
