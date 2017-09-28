@@ -7,6 +7,7 @@ global:
   js:
     js/slick.js: {}
     js/header-images.js: {}
+    js/fun-facts.js: {}
   dependencies:
     - core/classList
     - core/jquery

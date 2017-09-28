@@ -2,3 +2,18 @@
 {
   clear: both;
 }
+
+.block--main-content
+{
+  padding: 50px 25px;
+  margin: 0 auto;
+  max-width: 1100px;
+  color: #818181;
+
+  &:after
+  {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

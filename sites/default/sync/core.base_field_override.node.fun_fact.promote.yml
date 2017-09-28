@@ -1,0 +1,22 @@
+uuid: b491ce82-c1a4-4084-926b-62624fa79837
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fun_fact
+id: node.fun_fact.promote
+field_name: promote
+entity_type: node
+bundle: fun_fact
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

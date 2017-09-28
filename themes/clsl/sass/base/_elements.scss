@@ -24,3 +24,21 @@ li
 {
   margin-bottom: 0.25em;
 }
+
+main
+{
+  h2
+  {
+    color: $green;
+    font-weight: 300;
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+  }
+  h3
+  {
+    color: $green;
+    font-weight: 300;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+  }
+}

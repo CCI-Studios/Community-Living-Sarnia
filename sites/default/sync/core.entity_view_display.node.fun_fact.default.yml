@@ -1,0 +1,26 @@
+uuid: 032a81d9-d61f-4850-970b-d10abace5016
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fun_fact.body
+    - node.type.fun_fact
+  module:
+    - text
+    - user
+id: node.fun_fact.default
+targetEntityType: node
+bundle: fun_fact
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

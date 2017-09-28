@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Muli:400,400i,700,300,300i");
 * {
   margin: 0;
   padding: 0; }
@@ -30,6 +30,18 @@ ul, ol {
 
 li {
   margin-bottom: 0.25em; }
+
+main h2 {
+  color: #8dc63f;
+  font-weight: 300;
+  font-size: 2.2em;
+  margin-bottom: 0.5em; }
+
+main h3 {
+  color: #8dc63f;
+  font-weight: 300;
+  font-size: 1.6em;
+  margin-bottom: 0.5em; }
 
 .layout-container button,
 .layout-container .button,
@@ -153,6 +165,8 @@ header {
       color: transparent;
       min-width: 0;
       padding: 0; }
+      .block--search form .form-submit:hover {
+        background-color: transparent; }
   .block--search .form-item {
     margin: 0; }
 
@@ -365,12 +379,22 @@ header {
 .layout-content {
   clear: both; }
 
-footer {
+.block--main-content {
+  padding: 50px 25px;
+  margin: 0 auto;
+  max-width: 1100px;
+  color: #818181; }
+  .block--main-content:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.footer-container {
   background: #0099cc;
   color: white;
   position: relative;
   overflow: hidden; }
-  footer:before {
+  .footer-container:before {
     content: "";
     display: block;
     position: absolute;
@@ -379,14 +403,14 @@ footer {
     width: 150%;
     height: 100%;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.25) inset; }
-  footer > div {
+  .footer-container > div {
     position: relative;
     z-index: 1; }
-  footer a {
+  .footer-container a {
     color: white; }
 
 .region-footer {
-  padding: 70px 25px 50px 25px;
+  padding: 60px 25px 50px 25px;
   max-width: 1260px;
   margin: 0 auto; }
   .region-footer:after {
@@ -409,6 +433,7 @@ footer {
     background: url(../images/icon-phone.svg) no-repeat 4px top; }
   .block--footer-info .email {
     padding-left: 45px;
+    padding-bottom: 0;
     background: url(../images/icon-email.svg) no-repeat left top; }
 
 .block--footer-social-menu {
@@ -464,7 +489,7 @@ footer {
   background: #8dc63f;
   line-height: 48px;
   font-size: 0.8em;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25); }
+  color: white; }
   .footer-bottom:after {
     content: "";
     display: block;
@@ -473,6 +498,8 @@ footer {
     padding: 0 25px;
     max-width: 1260px;
     margin: 0 auto; }
+  .footer-bottom a {
+    color: white; }
   .footer-bottom .copyright {
     float: left; }
   .footer-bottom .site-by-cci {
@@ -481,6 +508,39 @@ footer {
       text-decoration: none; }
       .footer-bottom .site-by-cci a:hover {
         text-decoration: underline; }
+
+.block--fun-facts {
+  background: #6e267b;
+  color: white;
+  position: relative;
+  clear: both;
+  padding: 80px 25px;
+  overflow: hidden; }
+  .block--fun-facts:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    left: -25%;
+    top: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.25) inset; }
+  .block--fun-facts > div {
+    position: relative;
+    z-index: 1; }
+  .block--fun-facts .views-row {
+    display: none; }
+  .block--fun-facts a {
+    color: white; }
+  .block--fun-facts .field--name-body {
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 2.25em;
+    font-weight: 300;
+    line-height: 1.25;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); }
 
 .region-widgets {
   margin: -60px auto 0 auto;
@@ -535,7 +595,8 @@ footer {
     padding-bottom: 10px;
     background-repeat: no-repeat;
     background-position: top left;
-    position: relative; }
+    position: relative;
+    font-size: 1.5em; }
     .block--home-widget h2:before {
       content: "";
       position: absolute;
@@ -599,8 +660,9 @@ footer {
     margin-left: 50%;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); }
   .block--fee-for-service h2 {
-    font-weight: 400;
-    font-size: 2.25em; }
+    font-weight: 300;
+    font-size: 2.25em;
+    color: white; }
   .block--fee-for-service .button {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); }
   .block--fee-for-service:before {
@@ -715,7 +777,8 @@ footer {
         text-decoration: underline; }
   .node--type-event.node--view-mode-teaser h2 {
     font-weight: 400;
-    line-height: 1; }
+    line-height: 1;
+    font-size: 1.5em; }
   .node--type-event.node--view-mode-teaser p, .node--type-event.node--view-mode-teaser .field--name-field-teaser {
     font-size: 0.9375em;
     margin-top: 1em; }

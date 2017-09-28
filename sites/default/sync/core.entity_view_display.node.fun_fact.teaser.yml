@@ -1,0 +1,25 @@
+uuid: 73ff0828-0d61-4168-bcce-bc7768eb0a25
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fun_fact.body
+    - node.type.fun_fact
+  module:
+    - text
+    - user
+id: node.fun_fact.teaser
+targetEntityType: node
+bundle: fun_fact
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

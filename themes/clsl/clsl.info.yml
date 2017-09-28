@@ -12,6 +12,7 @@ regions:
   header: Header
   widgets: Widgets
   content: Content
+  facts: Facts
   footer: Footer
 libraries-override:
   classy/base:
