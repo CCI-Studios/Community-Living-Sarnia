@@ -3,7 +3,20 @@
   margin: -60px auto 0 auto;
   max-width: 1260px;
   padding: 0 25px;
+  position: relative;
+  z-index: 2;
 
+  &:before
+  {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    right: 25px;
+    height: 60px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  }
   &:after
   {
     content: "";
@@ -23,6 +36,7 @@
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
   overflow: hidden;
+  z-index: 1;
 
   &:hover:before
   {
@@ -30,10 +44,10 @@
     display: block;
     position: absolute;
     top: 50%;
-    right: -215px;
-    border: 230px solid transparent;
+    right: -235px;
+    border: 250px solid transparent;
     border-left-color: rgba(255,255,255, 0.1);
-    margin-top: -230px;
+    margin-top: -250px;
   }
   & > div
   {
@@ -73,6 +87,17 @@
     font-size: 0.875em;
     line-height: 1.25;
     margin-bottom: 1em;
+  }
+  .learn-more
+  {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+
+    &:hover
+    {
+      text-decoration: underline;
+    }
   }
 }
 .block--home-widget--get-involved
