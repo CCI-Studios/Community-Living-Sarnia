@@ -11,8 +11,10 @@ regions:
   navigation: Navigation
   header: Header
   widgets: Widgets
+  before_content: Before Content
   content: Content
-  facts: Facts
+  sidebar: Sidebar
+  after_content: After Content
   footer: Footer
 libraries-override:
   classy/base:

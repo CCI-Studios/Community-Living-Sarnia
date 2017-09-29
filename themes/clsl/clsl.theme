@@ -17,3 +17,34 @@ function clsl_preprocess_html(&$variables) {
     }
   }
 }
+
+function clsl_preprocess_block(&$variables) {
+  //only modify the main menu block in the sidebar
+  if (!$variables) return;
+  if ($variables['plugin_id'] != 'menu_block:main') return;
+  if (!isset($variables['attributes']['class'])) return;
+  if (!in_array('block--sidebar-menu', $variables['attributes']['class'])) return;
+  
+  //get the current page menu link
+  $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
+  $node_id = \Drupal::routeMatch()->getRawParameter('node');
+  $menu_link = $menu_link_manager->loadLinksByRoute('entity.node.canonical', array('node' => $node_id));
+  
+  //get the menu link parents
+  $title = "";
+  if (is_array($menu_link) && count($menu_link)) {
+    $menu_link = reset($menu_link);
+    if ($menu_link->getParent()) {
+      $parents = $menu_link_manager->getParentIds($menu_link->getParent());
+      $parent = reset($parents);
+      
+      //replace the block heading with the parent's title
+      $title = $menu_link_manager->createInstance($parent)->getTitle();
+    }
+  }
+  
+  if ($title) {
+    $variables['label'] = $title;
+    $variables['configuration']['label'] = $title;
+  }
+}

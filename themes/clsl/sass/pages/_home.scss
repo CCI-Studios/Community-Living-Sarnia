@@ -31,12 +31,20 @@
   width: 20%;
   height: 260px;
   box-sizing: border-box;
-  padding: 50px 60px 0 30px;
+  padding: 50px 55px 0 30px;
   position: relative;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
   overflow: hidden;
   z-index: 1;
+
+  &
+  {
+    @media (max-width: 1200px)
+    {
+      height: 290px;
+    }
+  }
 
   &:hover:before
   {
@@ -235,11 +243,4 @@
     border-top-color: transparent;
     border-left-color: transparent;
   }
-}
-
-.block--home-events
-{
-  padding: 0 25px;
-  max-width: 1260px;
-  margin: 0 auto 70px auto;
 }

@@ -15,8 +15,8 @@ third_party_settings:
     classes: block--fee-for-service
 id: feeforserviceoptions
 theme: clsl
-region: content
-weight: -11
+region: before_content
+weight: -13
 provider: null
 plugin: 'block_content:0a2bd5a7-8667-4670-aca6-a064c61afef4'
 settings:

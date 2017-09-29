@@ -4,7 +4,7 @@
   clear: right;
 }
 
-.menu--main
+.block--main-menu
 {
   .menu, li
   {
@@ -71,6 +71,15 @@
           {
             border-bottom: 0;
           }
+        }
+      }
+      &:nth-last-child(1),
+      &:nth-last-child(2)
+      {
+        & > .menu
+        {
+          left: auto;
+          right: 0;
         }
       }
       &:hover > .menu

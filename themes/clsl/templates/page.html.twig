@@ -62,15 +62,18 @@
       </div>
     {% endif %}
 
-    <div class="layout-content">
+    {{ page.before_content }}
+
+    <div class="layout-content {%if page.sidebar %}with-sidebar{%endif%}">
       {{ page.content }}
+      {{ page.sidebar }}
     </div>
+
+    {{ page.after_content }}
 
   </main>
 
   <footer>
-    {{ page.facts }}
-
     <div class="footer-container">
       {{ page.footer }}
     </div>

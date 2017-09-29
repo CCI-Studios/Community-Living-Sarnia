@@ -35,13 +35,15 @@ main h2 {
   color: #8dc63f;
   font-weight: 300;
   font-size: 2.2em;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  line-height: 1; }
 
 main h3 {
   color: #8dc63f;
   font-weight: 300;
   font-size: 1.6em;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  line-height: 1; }
 
 main img {
   display: block;
@@ -225,36 +227,36 @@ header {
   float: right;
   clear: right; }
 
-.menu--main .menu, .menu--main li {
+.block--main-menu .menu, .block--main-menu li {
   margin: 0;
   list-style: none; }
 
-.menu--main > .menu > li {
+.block--main-menu > .menu > li {
   display: block;
   float: left;
   position: relative; }
-  .menu--main > .menu > li > a {
+  .block--main-menu > .menu > li > a {
     color: #0099cc;
     text-transform: uppercase;
     text-decoration: none;
     display: block;
     padding: 30px 10px;
     line-height: 1; }
-  .menu--main > .menu > li:hover > a {
+  .block--main-menu > .menu > li:hover > a {
     color: #8dc63f;
     font-weight: bold;
     padding: 23px 10px 30px 10px;
     border-bottom: 7px solid #0099cc; }
-  .menu--main > .menu > li > .menu {
+  .block--main-menu > .menu > li > .menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 280px;
     z-index: 100; }
-    .menu--main > .menu > li > .menu > li {
+    .block--main-menu > .menu > li > .menu > li {
       display: block; }
-      .menu--main > .menu > li > .menu > li > a {
+      .block--main-menu > .menu > li > .menu > li > a {
         display: block;
         color: white;
         font-size: 0.875em;
@@ -265,11 +267,14 @@ header {
         line-height: 1;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
         border-bottom: 1px solid #3dafd6; }
-        .menu--main > .menu > li > .menu > li > a:hover {
+        .block--main-menu > .menu > li > .menu > li > a:hover {
           background: #8dc63f; }
-      .menu--main > .menu > li > .menu > li:last-child > a {
+      .block--main-menu > .menu > li > .menu > li:last-child > a {
         border-bottom: 0; }
-  .menu--main > .menu > li:hover > .menu {
+  .block--main-menu > .menu > li:nth-last-child(1) > .menu, .block--main-menu > .menu > li:nth-last-child(2) > .menu {
+    left: auto;
+    right: 0; }
+  .block--main-menu > .menu > li:hover > .menu {
     display: block; }
 
 .view-header-images {
@@ -382,7 +387,25 @@ header {
       display: inline-block; }
 
 .layout-content {
-  clear: both; }
+  clear: both;
+  padding: 50px 25px;
+  margin: 0 auto;
+  max-width: 1100px;
+  color: #818181; }
+  .layout-content:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.with-sidebar .region-content {
+  width: 60%;
+  float: left;
+  margin-right: 10%; }
+
+.region-sidebar {
+  width: 30%;
+  float: left;
+  box-sizing: border-box; }
 
 .block--page-title {
   clear: both;
@@ -413,15 +436,23 @@ header {
 .block--resources-page-title {
   background-image: url(../images/bg-resources.jpg); }
 
-.block--main-content {
-  padding: 50px 25px;
-  margin: 0 auto;
-  max-width: 1100px;
-  color: #818181; }
-  .block--main-content:after {
-    content: "";
+.block--sidebar-menu .menu {
+  list-style: none;
+  margin: 0; }
+  .block--sidebar-menu .menu li {
     display: block;
-    clear: both; }
+    margin: 0;
+    border-top: 1px solid #e0e0e0; }
+  .block--sidebar-menu .menu a {
+    display: block;
+    padding: 20px 30px;
+    color: #0099cc;
+    text-decoration: none;
+    line-height: 1; }
+    .block--sidebar-menu .menu a:hover {
+      text-decoration: underline; }
+  .block--sidebar-menu .menu .is-active {
+    font-weight: bold; }
 
 .footer-container {
   background: #0099cc;
@@ -633,12 +664,15 @@ header {
   width: 20%;
   height: 260px;
   box-sizing: border-box;
-  padding: 50px 60px 0 30px;
+  padding: 50px 55px 0 30px;
   position: relative;
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   z-index: 1; }
+  @media (max-width: 1200px) {
+    .block--home-widget {
+      height: 290px; } }
   .block--home-widget:hover:before {
     content: "";
     display: block;
@@ -780,11 +814,6 @@ header {
     border: 15px solid white;
     border-top-color: transparent;
     border-left-color: transparent; }
-
-.block--home-events {
-  padding: 0 25px;
-  max-width: 1260px;
-  margin: 0 auto 70px auto; }
 
 .node--type-event.node--view-mode-teaser {
   background-repeat: no-repeat;

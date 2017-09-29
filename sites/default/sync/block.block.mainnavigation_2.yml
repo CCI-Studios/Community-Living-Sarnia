@@ -1,4 +1,4 @@
-uuid: 258d587c-e149-4e7d-9600-c9006760fd21
+uuid: 6b108b75-c21f-4dc1-b330-0fe38c7aef40
 langcode: en
 status: true
 dependencies:
@@ -7,31 +7,25 @@ dependencies:
   module:
     - block_class
     - menu_block
-    - system
   theme:
     - clsl
 third_party_settings:
   block_class:
-    classes: block--sidebar-menu
-id: mainnavigation
+    classes: block--main-menu
+id: mainnavigation_2
 theme: clsl
-region: sidebar
+region: navigation
 weight: 0
 provider: null
 plugin: 'menu_block:main'
 settings:
   id: 'menu_block:main'
-  label: '[current-page:title]'
+  label: 'Main navigation'
   provider: menu_block
-  label_display: visible
-  level: 2
+  label_display: '0'
+  level: 1
   depth: 0
-  expand: 0
+  expand: 1
   parent: 'main:'
   suggestion: main
-visibility:
-  request_path:
-    id: request_path
-    pages: '/services/*'
-    negate: false
-    context_mapping: {  }
+visibility: {  }
