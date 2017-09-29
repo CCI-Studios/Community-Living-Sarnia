@@ -1,0 +1,9 @@
+uuid: 385774b7-d9a5-4ddb-90f9-e4842bf9390a
+langcode: en
+status: true
+dependencies: {  }
+id: collapsible_content
+label: 'Collapsible content'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

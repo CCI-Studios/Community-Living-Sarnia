@@ -9,13 +9,13 @@ dependencies:
     - clsl
 third_party_settings:
   block_class:
-    classes: ''
+    classes: block--page-title
 _core:
   default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
 id: clsl_page_title
 theme: clsl
 region: content
-weight: -3
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/information-for-families"
     negate: true
     context_mapping: {  }

@@ -1,0 +1,37 @@
+uuid: d1a715f1-7b92-47fd-b447-7aba734c72cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.collapsible_content
+    - paragraphs.paragraphs_type.collapsible_item
+  module:
+    - entity_reference_revisions
+id: paragraph.collapsible_content.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: collapsible_content
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      collapsible_item: collapsible_item
+    target_bundles_drag_drop:
+      collapsible_content:
+        weight: 3
+        enabled: false
+      content:
+        weight: 4
+        enabled: false
+      collapsible_item:
+        enabled: true
+        weight: 5
+field_type: entity_reference_revisions

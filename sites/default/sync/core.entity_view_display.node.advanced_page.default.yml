@@ -1,0 +1,30 @@
+uuid: 25114390-cd76-4a24-8d86-05c23d76e99a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.advanced_page.field_sections
+    - node.type.advanced_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.advanced_page.default
+targetEntityType: node
+bundle: advanced_page
+mode: default
+content:
+  field_sections:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

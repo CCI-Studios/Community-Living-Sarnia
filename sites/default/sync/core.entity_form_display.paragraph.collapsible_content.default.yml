@@ -1,0 +1,30 @@
+uuid: 292dce2b-1217-4550-bb70-18d6a553fc63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.collapsible_content.field_content
+    - paragraphs.paragraphs_type.collapsible_content
+  module:
+    - paragraphs
+id: paragraph.collapsible_content.default
+targetEntityType: paragraph
+bundle: collapsible_content
+mode: default
+content:
+  field_content:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -43,6 +43,11 @@ main h3 {
   font-size: 1.6em;
   margin-bottom: 0.5em; }
 
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto !important; }
+
 .layout-container button,
 .layout-container .button,
 .layout-container input[type="button"],
@@ -209,7 +214,7 @@ header {
     color: #0099cc;
     font-weight: bold;
     text-decoration: none;
-    padding-left: 16px;
+    padding: 0 10px 0 16px;
     background: url(../images/icon-login.svg) no-repeat left center;
     text-transform: uppercase;
     font-size: 15px; }
@@ -379,6 +384,35 @@ header {
 .layout-content {
   clear: both; }
 
+.block--page-title {
+  clear: both;
+  position: relative;
+  padding: 10.5% 25px;
+  background: url(../images/bg-header1.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden; }
+  .block--page-title:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    left: -25%;
+    top: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) inset; }
+  .block--page-title .page-title {
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.65);
+    font-size: 4em;
+    line-height: 1;
+    position: relative;
+    z-index: 1; }
+
+.block--resources-page-title {
+  background-image: url(../images/bg-resources.jpg); }
+
 .block--main-content {
   padding: 50px 25px;
   margin: 0 auto;
@@ -541,6 +575,38 @@ header {
     font-weight: 300;
     line-height: 1.25;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); }
+
+.paragraph--type--collapsible-item {
+  border-top: 1px solid #e6e6e6;
+  padding: 15px 0; }
+  .paragraph--type--collapsible-item:last-child {
+    border-bottom: 1px solid #e6e6e6; }
+  .paragraph--type--collapsible-item:before {
+    content: "";
+    background-image: url(../images/collapsible-minus.svg);
+    position: absolute;
+    left: -99999999px; }
+  .paragraph--type--collapsible-item .field--name-field-title a {
+    display: block;
+    color: #0099cc;
+    padding: 5px 60px 5px 16px;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: bold;
+    background: url(../images/collapsible-plus.svg) no-repeat 90% center;
+    background-position: calc(100% - 40px) center; }
+  .paragraph--type--collapsible-item.open .field--name-field-title a {
+    background-image: url(../images/collapsible-minus.svg); }
+  .paragraph--type--collapsible-item .field--name-field-body {
+    display: none;
+    padding: 0 60px 0 50px; }
+
+.paragraph--type--content,
+.paragraph--type--collapsible-content {
+  margin-bottom: 1.5em; }
+  .paragraph--type--content:last-child,
+  .paragraph--type--collapsible-content:last-child {
+    margin-bottom: 0; }
 
 .region-widgets {
   margin: -60px auto 0 auto;

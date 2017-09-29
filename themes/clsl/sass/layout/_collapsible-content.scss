@@ -1,0 +1,52 @@
+.paragraph--type--collapsible-item
+{
+  border-top: 1px solid #e6e6e6;
+  padding: 15px 0;
+
+  &:last-child
+  {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  &:before
+  {
+    content: "";
+    background-image: url(../images/collapsible-minus.svg);
+    position: absolute;
+    left: -99999999px;
+  }
+
+  .field--name-field-title
+  {
+    a
+    {
+      display: block;
+      color: $blue;
+      padding: 5px 60px 5px 16px;
+      line-height: 1;
+      text-decoration: none;
+      font-weight: bold;
+      background: url(../images/collapsible-plus.svg) no-repeat 90% center;
+      background-position: calc(100% - 40px) center;
+    }
+  }
+  &.open .field--name-field-title a
+  {
+    background-image: url(../images/collapsible-minus.svg);
+  }
+  .field--name-field-body
+  {
+    display: none;
+    padding: 0 60px 0 50px;
+  }
+}
+
+.paragraph--type--content,
+.paragraph--type--collapsible-content
+{
+  margin-bottom: 1.5em;
+
+  &:last-child
+  {
+    margin-bottom: 0;
+  }
+}

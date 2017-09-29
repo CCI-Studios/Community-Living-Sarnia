@@ -1,9 +1,9 @@
-uuid: 492f6ed0-5ae9-4d0d-83b0-daed0fb3d605
+uuid: f8eed078-7291-43f8-9894-151933eac2cf
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:0a2bd5a7-8667-4670-aca6-a064c61afef4'
+    - 'block_content:basic:60baadd0-c4d9-4e33-926e-bb5d1aa26609'
   module:
     - block_class
     - block_content
@@ -12,16 +12,16 @@ dependencies:
     - clsl
 third_party_settings:
   block_class:
-    classes: block--fee-for-service
-id: feeforserviceoptions
+    classes: 'block--page-title block--resources-page-title'
+id: resourcespagetitle
 theme: clsl
 region: content
-weight: -11
+weight: -6
 provider: null
-plugin: 'block_content:0a2bd5a7-8667-4670-aca6-a064c61afef4'
+plugin: 'block_content:60baadd0-c4d9-4e33-926e-bb5d1aa26609'
 settings:
-  id: 'block_content:0a2bd5a7-8667-4670-aca6-a064c61afef4'
-  label: 'Fee for Service Options'
+  id: 'block_content:60baadd0-c4d9-4e33-926e-bb5d1aa26609'
+  label: 'Resources page title'
   provider: block_content
   label_display: '0'
   status: true
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /information-for-families
     negate: false
     context_mapping: {  }

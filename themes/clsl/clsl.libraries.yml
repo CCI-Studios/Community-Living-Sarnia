@@ -8,6 +8,7 @@ global:
     js/slick.js: {}
     js/header-images.js: {}
     js/fun-facts.js: {}
+    js/collapsible-content.js: {}
   dependencies:
     - core/classList
     - core/jquery

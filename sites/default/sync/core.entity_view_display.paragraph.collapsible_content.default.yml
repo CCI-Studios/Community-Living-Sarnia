@@ -1,0 +1,24 @@
+uuid: 9b71d237-e2dd-4b6c-98e1-d24ff402b2e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.collapsible_content.field_content
+    - paragraphs.paragraphs_type.collapsible_content
+  module:
+    - entity_reference_revisions
+id: paragraph.collapsible_content.default
+targetEntityType: paragraph
+bundle: collapsible_content
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: 6444acd3-b5cc-4ffa-83e2-09d79c4ad0cf
+langcode: en
+status: true
+dependencies: {  }
+id: collapsible_item
+label: 'Collapsible item'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
