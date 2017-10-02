@@ -1,15 +1,16 @@
 uuid: d1dda7ab-85a0-4162-a1c5-a0e51544b195
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: event_teaser
 label: 'Event teaser'
 effects:
-  5d8d0149-e6eb-493f-8778-406726b218b5:
-    uuid: 5d8d0149-e6eb-493f-8778-406726b218b5
-    id: image_scale
+  2cec3099-487b-4746-8f98-56bf0afdc989:
+    uuid: 2cec3099-487b-4746-8f98-56bf0afdc989
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 500
       height: 500
-      upscale: false

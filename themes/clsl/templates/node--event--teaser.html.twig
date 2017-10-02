@@ -81,17 +81,16 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<div{{ attributes.addClass(classes).removeAttribute("role") }} style="background-image:url('{{node.field_image.entity.fileuri|image_style("event_teaser")}}');"><div>
+<div{{ attributes.addClass(classes).removeAttribute("role") }}><div>
 
-  <div class="field-event-date">
-    {{ content.field_event_date }}
-  </div>
+  {{ content.field_image }}
 
   <div{{ content_attributes.addClass('node__content') }}>
+    {{ content.field_event_date }}
     <h2{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
-    {{ content|without("field_event_date") }}
+    {{ content|without("field_event_date")|without("field_image") }}
     <p><a href="{{ url }}" class="view-event">{{ 'View Event'|t }}</a></p>
   </div>
 
