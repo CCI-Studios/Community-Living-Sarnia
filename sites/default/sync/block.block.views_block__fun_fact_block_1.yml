@@ -16,7 +16,7 @@ third_party_settings:
 id: views_block__fun_fact_block_1
 theme: clsl
 region: after_content
-weight: -12
+weight: -11
 provider: null
 plugin: 'views_block:fun_fact-block_1'
 settings:
@@ -29,6 +29,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/contact"
     negate: true
     context_mapping: {  }

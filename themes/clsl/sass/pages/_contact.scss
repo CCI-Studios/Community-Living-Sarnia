@@ -1,0 +1,46 @@
+.block--newsletter-subscription
+{
+  clear: both;
+  background: $purple url(../images/bg-newsletter-subscription.png) no-repeat center bottom;
+  background-size: contain;
+  color: white;
+  padding: 50px 25px;
+  position: relative;
+  overflow: hidden;
+
+  &:before
+  {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    top: 0;
+    left: -25%;
+    box-shadow: 0 0 7px rgba(0,0,0,0.3) inset;
+  }
+
+  & > div
+  {
+    max-width: 620px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  h2
+  {
+    color: white;
+    text-align: center;
+  }
+
+  label
+  {
+    position: absolute;
+    left: -999999px;
+  }
+  .form-actions
+  {
+    text-align: center;
+  }
+}

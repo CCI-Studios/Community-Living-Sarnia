@@ -69,3 +69,155 @@
     }
   }
 }
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=tel]
+{
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 47px;
+  line-height: 45px;
+  background: white;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+::-webkit-input-placeholder
+{
+  color: $blue;
+  font-style: italic;
+}
+::-moz-placeholder
+{
+  color: $blue;
+  font-style: italic;
+}
+:-ms-input-placeholder
+{
+  color: $blue;
+  font-style: italic;
+}
+:-moz-placeholder
+{
+  color: $blue;
+  font-style: italic;
+}
+
+select
+{
+  color: $blue;
+  font-style: italic;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 48px 0 20px;
+  height: 47px;
+  line-height: 45px;
+  background: white url(../images/dropdown.svg) no-repeat 90% center;
+  background-position: calc(100% - 20px);
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+textarea
+{
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  display: block;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  background: white;
+  -webkit-appearance: none;
+  appearance: none;
+  min-height: 180px;
+}
+
+label
+{
+  color: $blue;
+  display: block;
+}
+
+@media (min-width: 680px)
+{
+  .form-item
+  {
+    clear: both;
+  }
+  .form-item.form-left-column
+  {
+    float: left;
+    clear: left;
+    width: 50%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+  .form-item.form-right-column
+  {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    clear: none;
+    margin-top: 0;
+  }
+  .form-item.form-1-of-3-column
+  {
+    float: left;
+    clear: none;
+    width: 33.333%;
+    box-sizing: border-box;
+    padding-right: 10px;
+    margin-top: 0;
+  }
+  .form-item.form-2-of-3-column
+  {
+    float: left;
+    clear: none;
+    width: 33.333%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0;
+  }
+  .form-item.form-3-of-3-column
+  {
+    float: left;
+    clear: none;
+    width: 33.333%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-top: 0;
+  }
+  .form-item.form-2-3rd-column
+  {
+    float: left;
+    clear: left;
+    width: 66.666%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+  .form-item.form-1-3rd-column
+  {
+    float: left;
+    width: 33.333%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    clear: none;
+    margin-top: 0;
+  }
+}
+
