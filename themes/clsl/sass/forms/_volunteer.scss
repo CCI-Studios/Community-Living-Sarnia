@@ -1,0 +1,25 @@
+.form--volunteer-application
+{
+  & > fieldset
+  {
+    & > legend
+    {
+      color: $blue;
+      font-size: 1.5em;
+      display: block;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e6e6e6;
+      width: 100%;
+      line-height: 1;
+      margin-bottom: 12px;
+      font-weight: 300;
+    }
+    & > .fieldset-wrapper
+    {
+      @media (min-width: 740px)
+      {
+        padding: 0 40px;
+      }
+    }
+  }
+}

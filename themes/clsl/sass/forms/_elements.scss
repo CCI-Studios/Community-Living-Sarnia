@@ -145,11 +145,23 @@ textarea
 
 label
 {
-  color: $blue;
+  font-weight: bold;
   display: block;
 }
 
-@media (min-width: 680px)
+fieldset
+{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.form-item
+{
+  margin-top: 0;
+}
+
+@media (min-width: 740px)
 {
   .form-item
   {
@@ -219,5 +231,16 @@ label
     clear: none;
     margin-top: 0;
   }
+  .form-item.form-2-3rd-column.form-right
+  {
+    clear: none;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+  .form-item.form-1-3rd-column.form-left
+  {
+    padding-right: 10px;
+    padding-left: 0;
+    clear: left;
+  }
 }
-
