@@ -11,7 +11,7 @@ dependencies:
     - node.type.event
   module:
     - datetime
-    - image
+    - focal_point
     - path
     - text
 id: node.event.default
@@ -45,8 +45,10 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+      preview_link: true
+      offsets: '50,50'
     third_party_settings: {  }
-    type: image_image
+    type: image_focal_point
     region: content
   field_teaser:
     weight: 7
@@ -69,6 +71,13 @@ content:
     weight: 3
     region: content
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
   sticky:
     type: boolean_checkbox
     settings:
