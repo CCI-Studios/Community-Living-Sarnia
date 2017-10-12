@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/events\r\n/events/*"
+    pages: "/events\r\n/events/calendar*"
     negate: false
     context_mapping: {  }

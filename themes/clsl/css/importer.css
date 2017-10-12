@@ -1216,6 +1216,9 @@ header {
     background: none !important;
     border: 0 !important; }
 
+.node--type-event .field--name-field-event-date p {
+  margin-bottom: 1.5em; }
+
 .block--newsletter-subscription {
   clear: both;
   background: #6e267b url(../images/bg-newsletter-subscription.png) no-repeat center bottom;
