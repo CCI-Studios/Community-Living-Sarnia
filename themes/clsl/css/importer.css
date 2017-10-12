@@ -658,6 +658,9 @@ header {
 .block--contact-page-title {
   background-image: url(../images/bg-contact.jpg); }
 
+.block--partners-page-title {
+  background-image: url(../images/bg-partners.jpg); }
+
 .block--sidebar-menu .menu {
   list-style: none;
   margin: 0; }
@@ -1249,3 +1252,46 @@ header {
     left: -999999px; }
   .block--newsletter-subscription .form-actions {
     text-align: center; }
+
+.field--name-field-partners {
+  margin-top: 2em; }
+  .field--name-field-partners > div {
+    float: left;
+    width: 33.3333%;
+    padding: 0 15px 40px 15px;
+    box-sizing: border-box; }
+    .field--name-field-partners > div:nth-child(3n+1) {
+      clear: left; }
+    @media (max-width: 760px) {
+      .field--name-field-partners > div {
+        width: 50%; }
+        .field--name-field-partners > div:nth-child(3n+1) {
+          clear: none; }
+        .field--name-field-partners > div:nth-child(2n+1) {
+          clear: left; } }
+    @media (max-width: 480px) {
+      .field--name-field-partners > div {
+        width: auto;
+        float: none;
+        max-width: 360px;
+        margin: 0 auto; }
+        .field--name-field-partners > div:nth-child(2n+1) {
+          clear: none; } }
+  .field--name-field-partners .field--name-field-image {
+    min-width: 160px;
+    line-height: 160px;
+    margin-bottom: 20px;
+    text-align: center; }
+    .field--name-field-partners .field--name-field-image img {
+      display: inline-block;
+      max-width: 100%;
+      vertical-align: middle; }
+  .field--name-field-partners .paragraph--type--partner > a {
+    display: block;
+    color: #818181;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1; }
+    .field--name-field-partners .paragraph--type--partner > a:hover {
+      color: #0099cc; }

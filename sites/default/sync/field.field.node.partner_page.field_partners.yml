@@ -1,0 +1,43 @@
+uuid: 5d31be27-0718-4815-abf8-5e330294b48a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partners
+    - node.type.partner_page
+    - paragraphs.paragraphs_type.partner
+  module:
+    - entity_reference_revisions
+id: node.partner_page.field_partners
+field_name: field_partners
+entity_type: node
+bundle: partner_page
+label: Partners
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      partner: partner
+    target_bundles_drag_drop:
+      collapsible_content:
+        weight: 6
+        enabled: false
+      collapsible_item:
+        weight: 7
+        enabled: false
+      content:
+        weight: 8
+        enabled: false
+      form:
+        weight: 9
+        enabled: false
+      partner:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

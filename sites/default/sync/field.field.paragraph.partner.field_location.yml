@@ -1,0 +1,19 @@
+uuid: 9116a6d8-e466-4984-a065-ca8cda199dd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_location
+    - paragraphs.paragraphs_type.partner
+id: paragraph.partner.field_location
+field_name: field_location
+entity_type: paragraph
+bundle: partner
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
