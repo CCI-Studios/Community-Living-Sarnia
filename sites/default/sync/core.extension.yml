@@ -5,6 +5,8 @@ module:
   block_class: 0
   block_content: 0
   breakpoint: 0
+  calendar: 0
+  calendar_datetime: 0
   ckeditor: 0
   config: 0
   contextual: 0
@@ -51,6 +53,7 @@ module:
   toolbar: 0
   twig_tweak: 0
   user: 0
+  views_templates: 0
   views_ui: 0
   webform: 0
   webform_ui: 0

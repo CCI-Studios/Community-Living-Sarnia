@@ -1,0 +1,35 @@
+uuid: c2d63ad4-ebfd-448f-9b00-b1bdd6ed2f5f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:99691122-c429-43b8-b0c8-552b7c7c559a'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: ''
+id: eventslistintro
+theme: clsl
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:99691122-c429-43b8-b0c8-552b7c7c559a'
+settings:
+  id: 'block_content:99691122-c429-43b8-b0c8-552b7c7c559a'
+  label: 'Events List Intro'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/events\r\n/events/calendar*"
+    negate: false
+    context_mapping: {  }

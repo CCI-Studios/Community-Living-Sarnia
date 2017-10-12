@@ -12,3 +12,7 @@ global:
   dependencies:
     - core/classList
     - core/jquery
+calendar:
+  version: 1.x
+  js:
+    js/calendar.js: {}

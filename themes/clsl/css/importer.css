@@ -1131,6 +1131,91 @@ header {
   padding-top: 70px;
   text-align: center; }
 
+.view-events-list.view-display-id-page .view-header {
+  clear: both;
+  margin: 20px 0; }
+  .view-events-list.view-display-id-page .view-header:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.view-events-list.view-display-id-page .calendar-button {
+  float: right;
+  display: block;
+  color: transparent;
+  min-height: 20px;
+  background: url(../images/icon-calendar.svg) no-repeat right center;
+  text-decoration: none;
+  padding: 5px 25px 5px 5px; }
+  .view-events-list.view-display-id-page .calendar-button:hover, .view-events-list.view-display-id-page .calendar-button:focus {
+    color: #0099cc; }
+
+.view-events-calendar {
+  clear: both;
+  margin-top: 2em; }
+  .view-events-calendar .view-header {
+    border-bottom: 1px solid #0099cc;
+    margin-bottom: 20px;
+    padding-bottom: 20px; }
+    .view-events-calendar .view-header:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .view-events-calendar .view-header h3 {
+      color: #0099cc;
+      font-size: 1.5em;
+      float: left;
+      margin-bottom: 0; }
+    .view-events-calendar .view-header .list-button {
+      float: right;
+      display: block;
+      color: transparent;
+      min-height: 18px;
+      background: url(../images/icon-grid.svg) no-repeat right center;
+      text-decoration: none;
+      padding: 5px 25px 5px 5px; }
+      .view-events-calendar .view-header .list-button:hover, .view-events-calendar .view-header .list-button:focus {
+        color: #0099cc; }
+    .view-events-calendar .view-header .pager ul {
+      margin: 0; }
+  .view-events-calendar .calendar-calendar .inner div {
+    background: none; }
+  .view-events-calendar .calendar-calendar thead, .view-events-calendar .calendar-calendar th {
+    display: none; }
+  .view-events-calendar .calendar-calendar td {
+    border-color: white;
+    background: #f2f5f6;
+    text-align: left; }
+  .view-events-calendar .calendar-calendar .single-day {
+    height: 100px;
+    vertical-align: bottom !important; }
+  .view-events-calendar .calendar-calendar .day {
+    float: none; }
+  .view-events-calendar .calendar-calendar .today {
+    border-color: #0099cc !important;
+    background: #f2f5f6 !important; }
+  .view-events-calendar .calendar-calendar .date-box {
+    color: #0099cc; }
+  .view-events-calendar .calendar-calendar .has-event {
+    background: #e35525 !important;
+    color: white; }
+    .view-events-calendar .calendar-calendar .has-event a {
+      color: white;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+      font-size: 14px;
+      line-height: 1; }
+    .view-events-calendar .calendar-calendar .has-event .calendar,
+    .view-events-calendar .calendar-calendar .has-event .view-item {
+      float: none !important;
+      margin: 0; }
+    .view-events-calendar .calendar-calendar .has-event .item {
+      padding: 0 8px 8px 8px; }
+  .view-events-calendar .calendar-calendar .empty {
+    font-size: 0;
+    background: none !important;
+    border: 0 !important; }
+
 .block--newsletter-subscription {
   clear: both;
   background: #6e267b url(../images/bg-newsletter-subscription.png) no-repeat center bottom;

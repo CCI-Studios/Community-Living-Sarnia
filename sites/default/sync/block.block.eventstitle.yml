@@ -1,0 +1,35 @@
+uuid: 04cbdba1-f206-471f-829c-c13adf8c3a1a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:029a6672-ee90-40e7-9041-b1a853114ac6'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: 'block--page-title block--events-page-title'
+id: eventstitle
+theme: clsl
+region: before_content
+weight: 0
+provider: null
+plugin: 'block_content:029a6672-ee90-40e7-9041-b1a853114ac6'
+settings:
+  id: 'block_content:029a6672-ee90-40e7-9041-b1a853114ac6'
+  label: 'Events Title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/events\r\n/events/*"
+    negate: false
+    context_mapping: {  }
