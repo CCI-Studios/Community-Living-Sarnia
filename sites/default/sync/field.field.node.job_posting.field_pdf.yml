@@ -1,0 +1,27 @@
+uuid: 189d73c3-2915-4846-90b5-62207698412b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pdf
+    - node.type.job_posting
+  module:
+    - file
+id: node.job_posting.field_pdf
+field_name: field_pdf
+entity_type: node
+bundle: job_posting
+label: PDF
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

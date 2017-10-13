@@ -16,7 +16,7 @@ third_party_settings:
 id: newslettersubscription
 theme: clsl
 region: after_content
-weight: -12
+weight: -14
 provider: null
 plugin: 'block_content:20dc7508-200c-4c7b-af15-b1fd948b08c1'
 settings:

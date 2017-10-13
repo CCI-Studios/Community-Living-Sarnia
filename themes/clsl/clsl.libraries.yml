@@ -16,3 +16,7 @@ calendar:
   version: 1.x
   js:
     js/calendar.js: {}
+careers:
+  version: 1.x
+  js:
+    js/careers.js: {}

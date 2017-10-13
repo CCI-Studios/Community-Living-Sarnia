@@ -1295,3 +1295,70 @@ header {
     line-height: 1; }
     .field--name-field-partners .paragraph--type--partner > a:hover {
       color: #0099cc; }
+
+.block--job-postings {
+  background: #6e267b url(../images/icon-briefcase-bg.svg) no-repeat 80% 60%;
+  color: white;
+  clear: both;
+  padding: 60px 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); }
+  .block--job-postings > div {
+    max-width: 1100px;
+    margin: 0 auto; }
+  .block--job-postings a {
+    color: white; }
+  .block--job-postings h2 {
+    color: white;
+    line-height: 1;
+    margin-bottom: 30px; }
+  .block--job-postings .views-row {
+    border-top: 1px solid #8b5195;
+    padding: 18px 0 10px 0;
+    position: relative; }
+    .block--job-postings .views-row:last-child {
+      border-bottom: 1px solid #8b5195; }
+  .block--job-postings .node__title {
+    padding-bottom: 8px; }
+    .block--job-postings .node__title h3 {
+      font-size: 1em;
+      margin-bottom: 0; }
+    .block--job-postings .node__title a {
+      display: block;
+      padding: 0 60px 0 20px;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative; }
+      .block--job-postings .node__title a:before {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 4px;
+        background: #8dc63f;
+        position: absolute;
+        top: 50%;
+        margin-top: -2px;
+        right: 20px; }
+      .block--job-postings .node__title a:after {
+        content: "";
+        display: block;
+        height: 18px;
+        width: 4px;
+        background: #8dc63f;
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+        right: 27px; }
+      .block--job-postings .node__title a.open:after {
+        display: none; }
+  .block--job-postings .node__content {
+    display: none;
+    padding: 0 60px 8px 50px; }
+  .block--job-postings .more-details {
+    margin-top: 1em; }
+    .block--job-postings .more-details a {
+      font-style: italic;
+      font-size: 0.8125em;
+      text-decoration: none;
+      font-weight: bold; }
+      .block--job-postings .more-details a:hover {
+        text-decoration: underline; }

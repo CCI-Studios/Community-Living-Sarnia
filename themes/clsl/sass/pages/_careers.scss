@@ -1,0 +1,105 @@
+.block--job-postings
+{
+  background: $purple url(../images/icon-briefcase-bg.svg) no-repeat 80% 60%;
+  color: white;
+  clear: both;
+  padding: 60px 25px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+
+  & > div
+  {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  a
+  {
+    color: white;
+  }
+  h2
+  {
+    color: white;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+  .views-row
+  {
+    border-top: 1px solid #8b5195;
+    padding: 18px 0 10px 0;
+    position: relative;
+
+    &:last-child
+    {
+      border-bottom: 1px solid #8b5195;
+    }
+  }
+  .node__title
+  {
+    padding-bottom: 8px;
+
+    h3
+    {
+      font-size: 1em;
+      margin-bottom: 0;
+    }
+    a
+    {
+      display: block;
+      padding: 0 60px 0 20px;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+
+      &:before
+      {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 4px;
+        background: $green;
+        position: absolute;
+        top: 50%;
+        margin-top: -2px;
+        right: 20px;
+      }
+      &:after
+      {
+        content: "";
+        display: block;
+        height: 18px;
+        width: 4px;
+        background: $green;
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+        right: 27px;
+      }
+      &.open:after
+      {
+        display: none;
+      }
+    }
+  }
+  .node__content
+  {
+    display: none;
+    padding: 0 60px 8px 50px;
+  }
+  .more-details
+  {
+    margin-top: 1em;
+
+    a
+    {
+      font-style: italic;
+      font-size: 0.8125em;
+      text-decoration: none;
+      font-weight: bold;
+  
+      &:hover
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+}
