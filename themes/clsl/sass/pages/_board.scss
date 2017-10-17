@@ -179,3 +179,29 @@
 {
   position: relative;
 }
+
+.block--volunteer-board
+{
+  background: $orange;
+  color: white;
+  padding: 0 25px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+
+  & > div
+  {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0;
+    background: url(../images/icon-hands.svg) no-repeat right bottom;
+
+    & > div
+    {
+      max-width: 612px;
+    }
+  }
+
+  h2, a
+  {
+    color: white;
+  }
+}

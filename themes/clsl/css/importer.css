@@ -1253,6 +1253,45 @@ header {
   .block--newsletter-subscription .form-actions {
     text-align: center; }
 
+.block--contact-map {
+  height: 650px; }
+  .block--contact-map h2 {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 0; }
+  .block--contact-map .infowindow-container {
+    margin-top: 10px;
+    margin-left: 3px; }
+    .block--contact-map .infowindow-container > :nth-child(1) div {
+      background-color: transparent !important;
+      box-shadow: none !important; }
+    .block--contact-map .infowindow-container > :nth-child(1) > :nth-child(1) {
+      border-width: 10px 7px 0 7px !important; }
+  .block--contact-map .location {
+    color: white;
+    font-size: 15px; }
+  .block--contact-map .location-blue, .block--contact-map .location-blue div {
+    background-color: #0099cc !important; }
+  .block--contact-map .location-blue > :nth-child(1) > :nth-child(1) {
+    border-top-color: #0099cc !important; }
+  .block--contact-map .location-green, .block--contact-map .location-green div {
+    background-color: #8dc63f !important; }
+  .block--contact-map .location-green > :nth-child(1) > :nth-child(1) {
+    border-top-color: #8dc63f !important; }
+  .block--contact-map .location-orange, .block--contact-map .location-orange div {
+    background-color: #e35525 !important; }
+  .block--contact-map .location-orange > :nth-child(1) > :nth-child(1) {
+    border-top-color: #e35525 !important; }
+  .block--contact-map .location-yellow, .block--contact-map .location-yellow div {
+    background-color: #fcbb16 !important; }
+  .block--contact-map .location-yellow > :nth-child(1) > :nth-child(1) {
+    border-top-color: #fcbb16 !important; }
+  .block--contact-map .location-purple, .block--contact-map .location-purple div {
+    background-color: #6e267b !important; }
+  .block--contact-map .location-purple > :nth-child(1) > :nth-child(1) {
+    border-top-color: #6e267b !important; }
+
 .field--name-field-partners {
   margin-top: 2em; }
   .field--name-field-partners > div {
@@ -1495,3 +1534,18 @@ header {
 
 .path-part-board-of-directors .layout-content {
   position: relative; }
+
+.block--volunteer-board {
+  background: #e35525;
+  color: white;
+  padding: 0 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); }
+  .block--volunteer-board > div {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0;
+    background: url(../images/icon-hands.svg) no-repeat right bottom; }
+    .block--volunteer-board > div > div {
+      max-width: 612px; }
+  .block--volunteer-board h2, .block--volunteer-board a {
+    color: white; }

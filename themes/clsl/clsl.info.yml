@@ -7,7 +7,7 @@ libraries:
 base theme: classy
 regions:
   logo: Logo
-  top: top
+  top: Top
   navigation: Navigation
   header: Header
   widgets: Widgets

@@ -44,3 +44,95 @@
     text-align: center;
   }
 }
+
+.block--contact-map
+{
+  height: 650px;
+
+  h2
+  {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .infowindow-container
+  {
+    margin-top: 10px;
+    margin-left: 3px;
+
+    & > :nth-child(1)
+    {
+      //arrow
+      & div
+      {
+        background-color: transparent !important;
+        box-shadow: none !important;
+      }
+      & > :nth-child(1)
+      {
+        border-width: 10px 7px 0 7px !important;
+      }
+    }
+  }
+  .location
+  {
+    color: white;
+    font-size: 15px;
+  }
+  .location-blue
+  {
+    &, & div
+    {
+      background-color: $blue !important;
+    }
+    & > :nth-child(1) > :nth-child(1)
+    {
+      border-top-color: $blue !important;
+    }
+  }
+  .location-green
+  {
+    &, & div
+    {
+      background-color: $green !important;
+    }
+    & > :nth-child(1) > :nth-child(1)
+    {
+      border-top-color: $green !important;
+    }
+  }
+  .location-orange
+  {
+    &, & div
+    {
+      background-color: $orange !important;
+    }
+    & > :nth-child(1) > :nth-child(1)
+    {
+      border-top-color: $orange !important;
+    }
+  }
+  .location-yellow
+  {
+    &, & div
+    {
+      background-color: $yellow !important;
+    }
+    & > :nth-child(1) > :nth-child(1)
+    {
+      border-top-color: $yellow !important;
+    }
+  }
+  .location-purple
+  {
+    &, & div
+    {
+      background-color: $purple !important;
+    }
+    & > :nth-child(1) > :nth-child(1)
+    {
+      border-top-color: $purple !important;
+    }
+  }
+}

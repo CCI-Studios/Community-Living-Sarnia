@@ -24,3 +24,9 @@ board:
   version: 1.x
   js:
     js/board.js: {}
+map:
+  version: 1.x
+  js:
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyB7kQ6SANNgofGfQi5Nq3-ZX-6bJgLUzqk:
+      type: external
+    js/map.js: {}

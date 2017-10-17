@@ -1,0 +1,35 @@
+uuid: 1b1f5242-3bfb-4fcb-a421-7bfea25e1d06
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9b2f54e9-8ee7-4596-b6be-f2e576a93516'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: block--volunteer-board
+id: volunteerasaboardmember
+theme: clsl
+region: after_content
+weight: -14
+provider: null
+plugin: 'block_content:9b2f54e9-8ee7-4596-b6be-f2e576a93516'
+settings:
+  id: 'block_content:9b2f54e9-8ee7-4596-b6be-f2e576a93516'
+  label: 'Volunteer as a Board Member'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/about/board-of-directors\r\n/node/27"
+    negate: false
+    context_mapping: {  }
