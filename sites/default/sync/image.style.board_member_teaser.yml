@@ -1,0 +1,17 @@
+uuid: b20c3a64-7b97-4fdd-ab20-e558b015de6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: board_member_teaser
+label: 'Board member teaser'
+effects:
+  22ab96fb-bf3d-4943-858c-d30866e05cfa:
+    uuid: 22ab96fb-bf3d-4943-858c-d30866e05cfa
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 275
+      height: 275
+      crop_type: focal_point

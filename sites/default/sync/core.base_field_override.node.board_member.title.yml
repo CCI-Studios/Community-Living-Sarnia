@@ -1,0 +1,18 @@
+uuid: 5949cb7a-b488-4156-8f3d-dae86950a7d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.board_member
+id: node.board_member.title
+field_name: title
+entity_type: node
+bundle: board_member
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

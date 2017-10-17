@@ -1,9 +1,9 @@
-uuid: feeddcf2-3ccc-4c35-be23-78b287aed866
+uuid: 7a06cd85-31aa-4a02-9b3f-2920a5cbe439
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.events_list
+    - views.view.board_members
   module:
     - block_class
     - system
@@ -12,15 +12,15 @@ dependencies:
     - clsl
 third_party_settings:
   block_class:
-    classes: block--home-events
-id: views_block__events_list_block_1
+    classes: block--board-members-teasers
+id: views_block__board_members_block_teasers
 theme: clsl
 region: content
-weight: 1
+weight: 2
 provider: null
-plugin: 'views_block:events_list-block_1'
+plugin: 'views_block:board_members-block_teasers'
 settings:
-  id: 'views_block:events_list-block_1'
+  id: 'views_block:board_members-block_teasers'
   label: ''
   provider: views
   label_display: '0'
@@ -29,6 +29,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "/about/board-of-directors\r\n/node/27"
     negate: false
     context_mapping: {  }

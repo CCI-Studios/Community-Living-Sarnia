@@ -1,0 +1,17 @@
+uuid: ab889023-ce08-4f28-9464-8c1c3433cb09
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: board_member_bio
+label: 'Board member bio'
+effects:
+  b08ab4a0-805f-4db9-a718-d7a2ee51f5a4:
+    uuid: b08ab4a0-805f-4db9-a718-d7a2ee51f5a4
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 390
+      height: 450
+      crop_type: focal_point

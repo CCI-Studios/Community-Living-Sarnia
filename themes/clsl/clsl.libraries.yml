@@ -20,3 +20,7 @@ careers:
   version: 1.x
   js:
     js/careers.js: {}
+board:
+  version: 1.x
+  js:
+    js/board.js: {}

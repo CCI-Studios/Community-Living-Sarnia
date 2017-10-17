@@ -1,0 +1,21 @@
+uuid: 00de5f62-7f69-46d2-8b36-53afc94d19f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.board_member
+  module:
+    - telephone
+id: node.board_member.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: board_member
+label: 'Phone number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

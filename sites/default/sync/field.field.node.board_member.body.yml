@@ -1,0 +1,22 @@
+uuid: f0329206-ee41-4723-9a34-e21ea9188481
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.board_member
+  module:
+    - text
+id: node.board_member.body
+field_name: body
+entity_type: node
+bundle: board_member
+label: Bio
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

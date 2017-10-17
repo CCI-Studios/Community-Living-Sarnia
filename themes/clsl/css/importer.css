@@ -1362,3 +1362,136 @@ header {
       font-weight: bold; }
       .block--job-postings .more-details a:hover {
         text-decoration: underline; }
+
+.view-board-members.view-display-id-block_teasers {
+  margin-top: 2em; }
+  .view-board-members.view-display-id-block_teasers .views-row {
+    float: left;
+    width: 24%;
+    margin-left: 1.25%;
+    margin-bottom: 1.25%;
+    position: relative; }
+    .view-board-members.view-display-id-block_teasers .views-row:nth-child(4n+1) {
+      margin-left: 0;
+      clear: left; }
+
+.node--type-board-member.node--view-mode-teaser {
+  position: relative; }
+  .node--type-board-member.node--view-mode-teaser .field--name-field-image img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .node--type-board-member.node--view-mode-teaser .node__content {
+    background: #8dc63f;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 55px;
+    bottom: 20px;
+    padding: 5px 5px 7px 14px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+    -moz-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4)); }
+    .node--type-board-member.node--view-mode-teaser .node__content:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      width: 25px;
+      height: 50%;
+      background: linear-gradient(to top left, rgba(141, 198, 63, 0) 49%, #8dc63f 51%); }
+    .node--type-board-member.node--view-mode-teaser .node__content:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: 25px;
+      height: 50%;
+      background: linear-gradient(to bottom left, rgba(141, 198, 63, 0) 49%, #8dc63f 51%); }
+  .node--type-board-member.node--view-mode-teaser .field--name-title {
+    display: block;
+    line-height: 1;
+    font-size: 1.4em; }
+  .node--type-board-member.node--view-mode-teaser .field--name-field-board-title {
+    font-size: 0.9em;
+    line-height: 1;
+    padding-top: 2px; }
+  .node--type-board-member.node--view-mode-teaser .link {
+    font-size: 0;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+
+.node--type-board-member.node--view-mode-popup {
+  display: none;
+  background: white;
+  position: fixed;
+  width: 100%;
+  max-width: 780px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 101;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); }
+  .node--type-board-member.node--view-mode-popup > div {
+    padding-left: 50%; }
+  .node--type-board-member.node--view-mode-popup .field--name-field-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .node--type-board-member.node--view-mode-popup .node__content {
+    padding: 30px 40px;
+    position: relative;
+    min-height: 320px; }
+  .node--type-board-member.node--view-mode-popup .field--name-title {
+    color: #8dc63f;
+    font-size: 1.4em;
+    line-height: 1; }
+  .node--type-board-member.node--view-mode-popup .field--name-field-board-title {
+    color: #8dc63f;
+    margin-bottom: 1em;
+    line-height: 1; }
+  .node--type-board-member.node--view-mode-popup .field--name-field-phone-number a {
+    display: block;
+    margin-top: 1em;
+    padding-left: 38px;
+    color: #8dc63f;
+    background: url(../images/icon-bio-phone.svg) no-repeat 11px center; }
+  .node--type-board-member.node--view-mode-popup .close {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 22px;
+    height: 22px;
+    background: url(../images/icon-bio-close.svg) no-repeat center center;
+    font-size: 0;
+    text-decoration: none; }
+
+.bio-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: #0099cc;
+  opacity: 0.4;
+  cursor: pointer; }
+
+.path-part-board-of-directors .layout-content {
+  position: relative; }

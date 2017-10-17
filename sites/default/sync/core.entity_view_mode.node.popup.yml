@@ -1,0 +1,10 @@
+uuid: 5cf62398-6736-415a-a571-75be2be8c79d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.popup
+label: Popup
+targetEntityType: node
+cache: true

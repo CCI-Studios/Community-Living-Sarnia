@@ -1,0 +1,28 @@
+uuid: 245e5342-79e4-484e-8d6a-ec9d5c4fa30f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: board_members
+label: 'Board members'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      board_member: board_member
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+    auto_entityqueue:
+      auto_add: 1
+      insert_front: 0
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false
