@@ -1,3 +1,8 @@
+.layout-container
+{
+  overflow: hidden;
+}
+
 .layout-content
 {
   clear: both;
@@ -14,17 +19,28 @@
   }
 }
 
-.with-sidebar .region-content
+@media (min-width: 761px)
 {
-  width: 60%;
-  float: left;
-  margin-right: 10%;
+  .with-sidebar .region-content
+  {
+    width: 60%;
+    float: left;
+    margin-right: 10%;
+  }
+  .region-sidebar
+  {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+  }
 }
-.region-sidebar
+@media (max-width: 760px)
 {
-  width: 30%;
-  float: left;
-  box-sizing: border-box;
+  .region-sidebar
+  {
+    clear: both;
+    margin-top: 40px;
+  }
 }
 
 .block--page-title
@@ -58,6 +74,14 @@
     line-height: 1;
     position: relative;
     z-index: 1;
+
+    &
+    {
+      @media (max-width: 480px)
+      {
+        font-size: 3em;
+      }
+    }
   }
 }
 .block--resources-page-title

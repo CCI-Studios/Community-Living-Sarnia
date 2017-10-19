@@ -15,6 +15,57 @@
       margin-left: 0;
       clear: left;
     }
+    &
+    {
+      @media (max-width: 1100px)
+      {
+        width: 32%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+
+        &:nth-child(4n+1)
+        {
+          margin-left: 2%;
+          clear: none;
+        }
+        &:nth-child(3n+1)
+        {
+          margin-left: 0;
+          clear: left;
+        }
+      }
+      @media (max-width: 860px)
+      {
+        width: 49%;
+
+        &:nth-child(3n+1)
+        {
+          margin-left: 2%;
+          clear: none;
+        }
+        &:nth-child(2n+1)
+        {
+          margin-left: 0;
+          clear: left;
+        }
+      }
+      @media (max-width: 600px)
+      {
+        float: none;
+        width: auto;
+        max-width: 280px;
+        margin: 0 auto 20px auto;
+
+        &:nth-child(3n+1)
+        {
+          margin-left: auto;
+        }
+        &:nth-child(2n+1)
+        {
+          margin-left: auto;
+        }
+      }
+    }
   }
 }
 .node--type-board-member.node--view-mode-teaser
@@ -97,6 +148,8 @@
   position: fixed;
   width: 100%;
   max-width: 780px;
+  max-height: 100%;
+  overflow: auto;
   left: 50%;
   top: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -107,6 +160,15 @@
   & > div
   {
     padding-left: 50%;
+
+    &
+    {
+      @media (max-width: 760px)
+      {
+        padding-left: 0;
+        padding-top: 225px;
+      }
+    }
   }
 
   .field--name-field-image
@@ -119,12 +181,33 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    &
+    {
+      @media (max-width: 760px)
+      {
+        top: 25px;
+        height: 200px;
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+        border-radius: 100px;
+      }
+    }
   }
   .node__content
   {
     padding: 30px 40px;
     position: relative;
     min-height: 320px;
+
+    &
+    {
+      @media (max-width: 760px)
+      {
+        min-height: 0;
+      }
+    }
   }
   .field--name-title
   {

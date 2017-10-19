@@ -2,10 +2,21 @@
 {
   float: right;
   clear: right;
-}
 
-.block--main-menu
-{
+  &
+  {
+    @media (max-width: 760px)
+    {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      background: $blue;
+      display: none;
+    }
+  }
+
   .menu, li
   {
     margin: 0;
@@ -19,6 +30,14 @@
       float: left;
       position: relative;
 
+      &
+      {
+        @media (max-width: 760px)
+        {
+          float: none;
+        }
+      }
+
       & > a
       {
         color: $blue;
@@ -27,6 +46,24 @@
         display: block;
         padding: 30px 10px;
         line-height: 1;
+
+        &
+        {
+          @media (max-width: 760px)
+          {
+            padding: 18px 25px;
+            background: $blue;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+            font-weight: bold;
+            border-bottom: 1px solid #3dafd6;
+
+            &:hover
+            {
+              background: $green;
+            }
+          }
+        }
       }
       &:hover > a
       {
@@ -34,6 +71,17 @@
         font-weight: bold;
         padding: 23px 10px 30px 10px;
         border-bottom: 7px solid $blue;
+
+        &
+        {
+          @media (max-width: 760px)
+          {
+            border-bottom: 1px solid #3dafd6;
+            font-weight: bold;
+            padding: 18px 25px;
+            color: white;
+          }
+        }
       }
 
       & > .menu
@@ -44,6 +92,16 @@
         left: 0;
         width: 280px;
         z-index: 100;
+
+        &
+        {
+          @media (max-width: 760px)
+          {
+            display: block;
+            position: static;
+            width: auto;
+          }
+        }
 
         & > li
         {
@@ -66,10 +124,25 @@
             {
               background: $green;
             }
+            &
+            {
+              @media (max-width: 760px)
+              {
+                padding: 18px 25px 18px 40px;
+              }
+            }
           }
           &:last-child > a
           {
             border-bottom: 0;
+
+            &
+            {
+              @media (max-width: 760px)
+              {
+                border-bottom: 1px solid #3dafd6;
+              }
+            }
           }
         }
       }
@@ -87,5 +160,38 @@
         display: block;
       }
     }
+  }
+}
+
+.block--menu-btn
+{
+  display: none;
+  float: right;
+  margin-top: 40px;
+  
+  &
+  {
+    @media (max-width: 760px)
+    {
+      display: block;
+    }
+    @media (max-width: 480px)
+    {
+      margin-top: 30px;
+    }
+  }
+
+  .menu-btn
+  {
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 50px;
+    height: 22px;
+    line-height: 22px;
+    padding-bottom: 13px;
+    background: url(../images/icon-menu-btn.svg) no-repeat bottom center;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
   }
 }

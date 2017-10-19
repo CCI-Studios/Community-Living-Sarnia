@@ -46,10 +46,36 @@
   margin-right: 40px;
   font-size: 0.875em;
 
+  &
+  {
+    @media (max-width: 760px)
+    {
+      float: none;
+      margin: 0 auto 25px auto;
+      width: 270px;
+    }
+  }
+
   p
   {
     margin-bottom: 0;
     padding-bottom: 25px;
+  }
+  .logo img
+  {
+    &
+    {
+      @media (max-width: 1060px)
+      {
+        display: block;
+        width: 250px;
+        height: auto;
+      }
+      @media (max-width: 1060px)
+      {
+        width: 270px;
+      }
+    }
   }
   .address
   {
@@ -73,19 +99,52 @@
   float: right;
   margin: -12px 0 0 40px;
 
+  &
+  {
+    @media (max-width: 760px)
+    {
+      float: none;
+      margin: 0 0 25px 0;
+    }
+  }
+
   .menu
   {
+    &
+    {
+      @media (max-width: 760px)
+      {
+        text-align: center;
+      }
+    }
+
     li
     {
       float: none;
       margin: 0;
       display: block;
+
+      &
+      {
+        @media (max-width: 760px)
+        {
+          display: inline-block;
+        }
+      }
     }
     a
     {
       color: white;
       padding-left: 31px;
       font-size: 1em;
+
+      &
+      {
+        @media (max-width: 1140px)
+        {
+          font-size: 0;
+        }
+      }
     }
     .fb
     {
@@ -117,6 +176,22 @@
     column-count: 3;
     column-gap: 40px;
     font-size: 0.875em;
+
+    &
+    {
+      @media (max-width: 1060px)
+      {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+      }
+      @media (max-width: 480px)
+      {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+      }
+    }
 
     & > li
     {
@@ -178,10 +253,30 @@
   .copyright
   {
     float: left;
+
+    &
+    {
+      @media (max-width: 480px)
+      {
+        float: none;
+        line-height: 1.5;
+        padding-top: 20px;
+      }
+    }
   }
   .site-by-cci
   {
     float: right;
+
+    &
+    {
+      @media (max-width: 480px)
+      {
+        float: none;
+        line-height: 1.5;
+        padding-bottom: 20px;
+      }
+    }
 
     a
     {

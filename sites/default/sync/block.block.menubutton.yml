@@ -1,0 +1,29 @@
+uuid: 72ea730b-de4e-40ad-95ca-5634bf00783c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8c271be9-3b63-48a3-afb5-5d33c3dae03d'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: block--menu-btn
+id: menubutton
+theme: clsl
+region: navigation
+weight: 0
+provider: null
+plugin: 'block_content:8c271be9-3b63-48a3-afb5-5d33c3dae03d'
+settings:
+  id: 'block_content:8c271be9-3b63-48a3-afb5-5d33c3dae03d'
+  label: 'Menu button'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

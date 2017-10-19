@@ -27,6 +27,16 @@
       font-weight: bold;
       background: url(../images/collapsible-plus.svg) no-repeat 90% center;
       background-position: calc(100% - 40px) center;
+
+      &
+      {
+        @media (max-width: 480px)
+        {
+          padding-left: 0;
+          padding-right: 30px;
+          background-position: right center;
+        }
+      }
     }
   }
   &.open .field--name-field-title a
@@ -37,6 +47,14 @@
   {
     display: none;
     padding: 0 60px 0 50px;
+
+    &
+    {
+      @media (max-width: 480px)
+      {
+        padding: 0 0 0 25px;
+      }
+    }
   }
 }
 

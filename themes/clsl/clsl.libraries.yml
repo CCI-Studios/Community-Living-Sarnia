@@ -7,6 +7,7 @@ global:
   js:
     js/slick.js: {}
     js/header-images.js: {}
+    js/menu.js: {}
     js/fun-facts.js: {}
     js/collapsible-content.js: {}
   dependencies:

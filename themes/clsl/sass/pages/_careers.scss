@@ -50,6 +50,14 @@
       text-decoration: none;
       position: relative;
 
+      &
+      {
+        @media (max-width: 540px)
+        {
+          padding-left: 0;
+        }
+      }
+
       &:before
       {
         content: "";
@@ -84,6 +92,15 @@
   {
     display: none;
     padding: 0 60px 8px 50px;
+
+    &
+    {
+      @media (max-width: 540px)
+      {
+        padding-left: 25px;
+        padding-right: 0;
+      }
+    }
   }
   .more-details
   {

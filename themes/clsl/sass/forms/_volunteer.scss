@@ -22,4 +22,15 @@
       }
     }
   }
+  &
+  {
+    @media (max-width: 480px)
+    {
+      input[type=file]
+      {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
 }

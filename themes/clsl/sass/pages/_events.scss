@@ -123,6 +123,21 @@
       margin-left: 0;
       clear: left;
     }
+    &
+    {
+      @media (max-width: 760px)
+      {
+        float: none;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto 20px auto;
+
+        &:nth-child(3n + 1)
+        {
+          margin-left: auto;
+        }
+      }
+    }
   }
   .view-footer
   {
