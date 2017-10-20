@@ -29,6 +29,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /careers
+    pages: "/get-involved/careers\r\n/node/37"
     negate: false
     context_mapping: {  }

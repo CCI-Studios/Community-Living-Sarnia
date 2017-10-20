@@ -40,14 +40,16 @@ datasource_settings:
     bundles:
       default: true
       selected:
+        - board_member
+        - fun_fact
         - header_image
+        - job_posting
     languages:
       default: true
       selected: {  }
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
-  rendered_item: {  }
   entity_status: {  }
   html_filter:
     all_fields: false
@@ -75,6 +77,7 @@ processor_settings:
     weights:
       preprocess_index: -20
       preprocess_query: -20
+  rendered_item: {  }
   tokenizer:
     all_fields: false
     fields:

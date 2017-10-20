@@ -15,8 +15,6 @@ searched_fields:
   body: body
   title: title
   field_teaser: field_teaser
-style: view_modes
-view_mode_configuration:
-  'entity:node_event': default
-  'entity:node_page': default
+style: search_results
+view_mode_configuration: {  }
 show_search_form: true
