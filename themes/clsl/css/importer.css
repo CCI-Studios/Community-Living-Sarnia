@@ -1376,7 +1376,8 @@ header {
 .view-events-list .views-row {
   float: left;
   width: 30%;
-  margin-left: 5%; }
+  margin-left: 5%;
+  margin-bottom: 5%; }
   .view-events-list .views-row:nth-child(3n + 1) {
     margin-left: 0;
     clear: left; }
@@ -1391,7 +1392,6 @@ header {
 
 .view-events-list .view-footer {
   clear: both;
-  padding-top: 70px;
   text-align: center; }
 
 .view-events-list.view-display-id-page .view-header {
