@@ -138,7 +138,7 @@ handlers:
       from_mail: default
       from_options: {  }
       from_name: default
-      subject: default
+      subject: 'Webform submission from: [webform:title]'
       body: default
       excluded_elements: {  }
       ignore_access: false
