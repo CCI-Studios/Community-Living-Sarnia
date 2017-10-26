@@ -66,10 +66,10 @@ settings:
   draft_loaded_message: ''
   confirmation_type: page
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: '<p>Thank you for contacting Community Living Sarnia-Lambton. Your messaged is being reviewed by our team. Someone will reach out to you shortly!</p>'
   confirmation_url: ''
   confirmation_attributes: {  }
-  confirmation_back: true
+  confirmation_back: false
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   limit_total: null
