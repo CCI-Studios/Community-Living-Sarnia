@@ -1242,6 +1242,11 @@ header {
     color: white; }
   .block--fee-for-service .button {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); }
+    @media (max-width: 480px) {
+      .block--fee-for-service .button {
+        display: block;
+        width: 240px;
+        margin: 0 auto; } }
   .block--fee-for-service:before {
     content: "";
     display: block;
