@@ -1012,7 +1012,7 @@ header {
   color: white;
   position: relative;
   clear: both;
-  padding: 80px 25px;
+  padding: 50px 25px;
   overflow: hidden; }
   .block--fun-facts:before {
     content: "";
@@ -1031,7 +1031,7 @@ header {
   .block--fun-facts a {
     color: white; }
   .block--fun-facts .field--name-body {
-    max-width: 540px;
+    max-width: 680px;
     margin: 0 auto;
     text-align: center;
     font-style: italic;
