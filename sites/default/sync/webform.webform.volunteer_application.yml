@@ -66,10 +66,10 @@ settings:
   draft_loaded_message: ''
   confirmation_type: page
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: '<p>Thank you for your interest in volunteering with Community Living Sarnia-Lambton. Your application has been received and is being reviewed by our team. If you do not hear back within 72 hours, please contact&nbsp;<a href="mailto:nhills@communitylivingsarnia.org">nhills@communitylivingsarnia.org</a>.</p>'
   confirmation_url: ''
   confirmation_attributes: {  }
-  confirmation_back: true
+  confirmation_back: false
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   limit_total: null
