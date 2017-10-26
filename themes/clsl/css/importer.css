@@ -1510,6 +1510,9 @@ header {
   .block--newsletter-subscription label {
     position: absolute;
     left: -999999px; }
+  .block--newsletter-subscription input[type=text],
+  .block--newsletter-subscription input[type=email] {
+    color: #0099cc; }
   .block--newsletter-subscription .form-actions {
     text-align: center; }
 
