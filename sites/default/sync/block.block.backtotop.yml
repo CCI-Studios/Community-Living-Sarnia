@@ -1,9 +1,9 @@
-uuid: cabeab75-9770-48ae-a327-d1f968110f0e
+uuid: cdb7a79d-dad7-4a0b-932a-791f47cab124
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:8bb12367-a9c7-4765-9fe0-ca07d68e3a90'
+    - 'block_content:basic:ed0fd565-1516-4248-8e56-0349721cbbdc'
   module:
     - block_class
     - block_content
@@ -11,16 +11,16 @@ dependencies:
     - clsl
 third_party_settings:
   block_class:
-    classes: block--footer-info
-id: footerinfo
+    classes: block--back-to-top
+id: backtotop
 theme: clsl
 region: footer
-weight: -18
+weight: -15
 provider: null
-plugin: 'block_content:8bb12367-a9c7-4765-9fe0-ca07d68e3a90'
+plugin: 'block_content:ed0fd565-1516-4248-8e56-0349721cbbdc'
 settings:
-  id: 'block_content:8bb12367-a9c7-4765-9fe0-ca07d68e3a90'
-  label: 'Footer info'
+  id: 'block_content:ed0fd565-1516-4248-8e56-0349721cbbdc'
+  label: 'Back to Top'
   provider: block_content
   label_display: '0'
   status: true

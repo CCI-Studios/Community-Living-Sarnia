@@ -234,6 +234,14 @@
   font-size: 0.8em;
   color: white;
 
+  &
+  {
+    @media (max-width: 760px)
+    {
+      padding-bottom: 50px;
+    }
+  }
+
   &:after
   {
     content: "";
@@ -334,5 +342,44 @@
     font-weight: 300;
     line-height: 1.25;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+  }
+}
+
+.block--back-to-top
+{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+
+  &.show
+  {
+    @media (max-width: 760px)
+    {
+      display: block;
+    }
+  }
+
+  .back-to-top
+  {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    color: $green;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+
+    &:before
+    {
+      content: "";
+      display: inline-block;
+      width: 22px;
+      height: 14px;
+      background: url(../images/icon-back-to-top.svg) no-repeat left center;
+    }
   }
 }

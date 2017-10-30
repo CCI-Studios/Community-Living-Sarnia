@@ -15,7 +15,7 @@ third_party_settings:
 id: socialmenu_2
 theme: clsl
 region: footer
-weight: -9
+weight: -17
 provider: null
 plugin: 'system_menu_block:social-menu'
 settings:
