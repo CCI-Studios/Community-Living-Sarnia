@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.advanced_page.field_keywords
     - field.field.node.advanced_page.field_sections
     - node.type.advanced_page
   module:
@@ -15,7 +16,7 @@ mode: default
 content:
   field_sections:
     type: entity_reference_revisions_entity_view
-    weight: 102
+    weight: 1
     label: hidden
     settings:
       view_mode: default
@@ -23,8 +24,9 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_keywords: true

@@ -1871,3 +1871,6 @@ header {
       max-width: 612px; }
   .block--volunteer-board h2, .block--volunteer-board a {
     color: white; }
+
+.search-result {
+  margin-bottom: 2em; }

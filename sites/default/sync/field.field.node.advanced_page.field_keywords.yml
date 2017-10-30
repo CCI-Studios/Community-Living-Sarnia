@@ -1,0 +1,19 @@
+uuid: aefb1afd-522a-45ff-b2f2-ab68704b6a28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keywords
+    - node.type.advanced_page
+id: node.advanced_page.field_keywords
+field_name: field_keywords
+entity_type: node
+bundle: advanced_page
+label: 'Search Keywords'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
