@@ -14,10 +14,16 @@ global:
   dependencies:
     - core/classList
     - core/jquery
+    - clsl/calendar
 calendar:
   version: 1.x
   js:
+    js/moment.js: {}
+    js/fullcalendar.min.js: {}
     js/calendar.js: {}
+  css:
+    theme:
+      css/fullcalendar.min.css: {}
 careers:
   version: 1.x
   js:

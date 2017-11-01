@@ -1,0 +1,46 @@
+uuid: 87de9480-b489-419b-916b-c346157dc552
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_dates
+    - node.type.event
+    - paragraphs.paragraphs_type.event_date
+  module:
+    - entity_reference_revisions
+id: node.event.field_event_dates
+field_name: field_event_dates
+entity_type: node
+bundle: event
+label: 'Event dates'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      event_date: event_date
+    target_bundles_drag_drop:
+      collapsible_content:
+        weight: 7
+        enabled: false
+      collapsible_item:
+        weight: 8
+        enabled: false
+      content:
+        weight: 9
+        enabled: false
+      event_date:
+        enabled: true
+        weight: 10
+      form:
+        weight: 11
+        enabled: false
+      partner:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

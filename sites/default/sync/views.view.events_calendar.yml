@@ -1,19 +1,22 @@
-uuid: 9198f038-d4af-40d1-b6aa-a0be44d83965
+uuid: 809347e8-55d0-4242-bcf6-84cb3660391c
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.storage.paragraph.field_event_date
+    - views.view.event_list
   module:
     - calendar
     - datetime
     - node
-    - user
+    - paragraphs
 id: events_calendar
 label: 'Events Calendar'
 module: views
 description: ''
 tag: ''
-base_table: node_field_data
-base_field: nid
+base_table: paragraphs_item_field_data
+base_field: id
 core: 8.x
 display:
   default:
@@ -23,9 +26,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -52,38 +54,88 @@ display:
         options:
           exclude_display: 1
       style:
-        type: calendar
+        type: default
         options:
-          calendar_type: month
-          mini: '0'
-          name_size: '3'
-          with_weekno: '0'
-          max_items: '0'
-          max_items_behavior: more
-          groupby_times: hour
-          groupby_times_custom: null
-          theme_style: '1'
-          groupby_field: ''
-          multiday_theme: '0'
-          multiday_hidden: {  }
-          granularity_links:
-            day: ''
-            week: ''
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
       row:
-        type: calendar_row
+        type: fields
         options:
-          colors:
-            legend: type
-            calendar_colors_type:
-              article: '#ffffff'
-              page: '#ffffff'
-            taxonomy_field: ''
-            calendar_colors_vocabulary: {  }
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         title:
           id: title
           table: node_field_data
           field: title
+          relationship: reverse__node__field_event_dates_target_id
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        field_event_date:
+          id: field_event_date
+          table: paragraph__field_event_date
+          field: field_event_date
           relationship: none
           group_type: group
           admin_label: ''
@@ -129,6 +181,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: html_date
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -139,38 +195,13 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: created
           plugin_id: field
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
-      sorts:
-        field_event_date_value:
-          id: field_event_date_value
-          table: node__field_event_date
-          field: field_event_date_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-          plugin_id: datetime
+      filters: {  }
+      sorts: {  }
+      title: 'Calendar of Events'
       header:
-        area_text_custom_1:
-          id: area_text_custom_1
+        area_text_custom:
+          id: area_text_custom
           table: views
           field: area_text_custom
           relationship: none
@@ -178,72 +209,59 @@ display:
           admin_label: 'Month Heading'
           empty: true
           tokenize: true
-          content: '<h3>{{ arguments.field_event_date_value_year_month }} Events</h3>'
+          content: '<h3 data-date="{{ raw_arguments.field_event_date_value_year_month }}">{{ arguments.field_event_date_value_year_month }} Events</h3>'
           plugin_id: text_custom
-        area_text_custom:
-          id: area_text_custom
+        area_text_custom_1:
+          id: area_text_custom_1
           table: views
           field: area_text_custom
           relationship: none
           group_type: group
-          admin_label: 'List View button'
+          admin_label: 'List/Calendar View buttons'
           empty: true
-          tokenize: true
-          content: '<a href="/events" class="list-button" title="List view">List view</a>'
+          tokenize: false
+          content: "<a href=\"#\" class=\"list-button\" title=\"List view\">List view</a>\n<a href=\"#\" class=\"calendar-button\" title=\"Calendar view\">Calendar view</a>"
           plugin_id: text_custom
-        calendar_header_1:
-          id: calendar_header_1
+        calendar_header:
+          id: calendar_header
           table: views
           field: calendar_header
           relationship: none
           group_type: group
-          admin_label: 'Calendar pager'
+          admin_label: ''
           empty: true
           tokenize: 1
           content: ''
           pager_embed: 1
           plugin_id: calendar_header
-      footer: {  }
+      footer:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          view_to_insert: 'event_list:block_1'
+          inherit_arguments: true
+          plugin_id: view
       empty: {  }
-      relationships: {  }
-      arguments: {  }
-      display_extenders: {  }
-      title: 'Calendar of Events'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  page_month:
-    display_plugin: page
-    id: page_month
-    display_title: Month
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: events/calendar
-      display_description: ''
-      menu:
-        type: tab
-        title: Month
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
-        menu_name: main
-      tab_options:
-        type: normal
-        title: Calendar
-        description: ''
-        weight: 0
+      relationships:
+        reverse__node__field_event_dates_target_id:
+          id: reverse__node__field_event_dates_target_id
+          table: paragraphs_item_field_data
+          field: reverse__node__field_event_dates_target_id
+          relationship: none
+          group_type: group
+          admin_label: field_event_dates
+          required: true
+          entity_type: paragraph
+          plugin_id: entity_reverse
       arguments:
         field_event_date_value_year_month:
           id: field_event_date_value_year_month
-          table: node__field_event_date
+          table: paragraph__field_event_date
           field: field_event_date_value_year_month
           relationship: none
           group_type: group
@@ -274,15 +292,28 @@ display:
           validate_options:
             replacement_format: 'F Y'
           plugin_id: datetime_year_month
-      defaults:
-        arguments: false
-        header: true
+      display_extenders: {  }
     cache_metadata:
       max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.paragraph.field_event_date'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: events/calendar
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+      tags:
+        - 'config:field.storage.paragraph.field_event_date'

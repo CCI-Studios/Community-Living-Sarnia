@@ -1,16 +1,16 @@
-uuid: 750ce817-db5b-4e63-bf8e-a05078c20b1d
+uuid: 853b265d-c397-4767-82bb-4a7e37ed4faa
 langcode: en
 status: true
 dependencies:
   module:
     - datetime
-    - node
-id: node.field_event_date
+    - paragraphs
+id: paragraph.field_event_date
 field_name: field_event_date
-entity_type: node
+entity_type: paragraph
 type: datetime
 settings:
-  datetime_type: datetime
+  datetime_type: date
 module: datetime
 locked: false
 cardinality: 1

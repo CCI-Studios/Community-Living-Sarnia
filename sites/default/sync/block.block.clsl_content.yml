@@ -15,7 +15,7 @@ _core:
 id: clsl_content
 theme: clsl
 region: content
-weight: 0
+weight: -14
 provider: null
 plugin: system_main_block
 settings:

@@ -9,6 +9,7 @@
  * @ingroup themeable
  */
 #}
+{{ attach_library('clsl/calendar') }}
 {% if (items.previous or items.next) and not exclude %}
     <nav class="pager" role="navigation" aria-labelledby="pagination-heading">
         <h4 class="visually-hidden">{{ 'Pagination'|t }}</h4>

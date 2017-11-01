@@ -1,16 +1,16 @@
-uuid: ebfb954a-7766-45f1-a00b-841c66d9a678
+uuid: 5088a7b2-e89d-4cc1-b92e-263ed2515c1a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_event_date
-    - node.type.event
+    - field.storage.paragraph.field_event_date
+    - paragraphs.paragraphs_type.event_date
   module:
     - datetime
-id: node.event.field_event_date
+id: paragraph.event_date.field_event_date
 field_name: field_event_date
-entity_type: node
-bundle: event
+entity_type: paragraph
+bundle: event_date
 label: 'Event date'
 description: ''
 required: true

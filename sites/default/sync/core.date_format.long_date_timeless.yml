@@ -1,0 +1,8 @@
+uuid: 1fd15bf8-6c35-4ed7-8121-9b036894cd7c
+langcode: en
+status: true
+dependencies: {  }
+id: long_date_timeless
+label: 'Long date timeless'
+locked: false
+pattern: 'l, F j, Y'

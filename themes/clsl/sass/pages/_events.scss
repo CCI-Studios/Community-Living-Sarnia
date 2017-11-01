@@ -1,4 +1,5 @@
-.node--type-event.node--view-mode-teaser
+.node--type-event.node--view-mode-teaser,
+.view-event-list .views-row
 {
   background-repeat: no-repeat;
   background-position: center center;
@@ -23,14 +24,16 @@
     opacity: 0.6;
   }
 
-  .field--name-field-image img
+  .field--name-field-image img,
+  .views-field-field-image img
   {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  .field--name-field-event-date
+  .field--name-field-event-date,
+  .views-field-field-event-date
   {
     margin-left: -30px;
     margin-bottom: 1em;
@@ -91,7 +94,7 @@
     line-height: 1;
     font-size: 1.5em;
   }
-  p, .field--name-field-teaser
+  p, .field--name-field-teaser, .views-field-field-teaser
   {
     font-size: 0.9375em;
     margin-top: 1em;
@@ -104,7 +107,8 @@
   }
 }
 
-.view-events-list
+.view-events-list,
+.view-event-list
 {
   &:after
   {
@@ -145,37 +149,6 @@
     clear: both;
     text-align: center;
   }
-
-  &.view-display-id-page
-  {
-    .view-header
-    {
-      clear: both;
-      margin: 20px 0;
-
-      &:after
-      {
-        content: "";
-        display: block;
-        clear: both;
-      }
-    }
-    .calendar-button
-    {
-      float: right;
-      display: block;
-      color: transparent;
-      min-height: 20px;
-      background: url(../images/icon-calendar.svg) no-repeat right center;
-      text-decoration: none;
-      padding: 5px 25px 5px 5px;
-
-      &:hover, &:focus
-      {
-        color: $blue;
-      }
-    }
-  }
 }
 
 .view-events-calendar
@@ -202,21 +175,6 @@
       float: left;
       margin-bottom: 0;
     }
-    .list-button
-    {
-      float: right;
-      display: block;
-      color: transparent;
-      min-height: 18px;
-      background: url(../images/icon-grid.svg) no-repeat right center;
-      text-decoration: none;
-      padding: 5px 25px 5px 5px;
-
-      &:hover, &:focus
-      {
-        color: $blue;
-      }
-    }
     .pager
     {
       ul
@@ -225,78 +183,176 @@
       }
     }
   }
-
-  .calendar-calendar
+  & > .view-footer
   {
-    .inner div
-    {
-      background: none;
-    }
-    thead, th
-    {
-      display: none;
-    }
-    td
-    {
-      border-color: white;
-      background: #f2f5f6;
-      text-align: left;
-    }
-    .single-day
-    {
-      height: 100px;
-      vertical-align: bottom !important;
-    }
-    .day
-    {
-      float: none;
-    }
-    .today
-    {
-      border-color: $blue !important;
-      background: #f2f5f6 !important;
-    }
-    .date-box
+    display: none;
+  }
+  & > .view-content > .views-row
+  {
+    display: none;
+  }
+  .list-button
+  {
+    float: right;
+    display: block;
+    color: transparent;
+    min-height: 20px;
+    background: url(../images/icon-grid.svg) no-repeat right center;
+    text-decoration: none;
+    padding: 5px 25px 5px 5px;
+
+    &:hover, &:focus
     {
       color: $blue;
     }
-    .has-event
-    {
-      background: $orange !important;
-      color: white;
+  }
+  .calendar-button
+  {
+    display: none;
+    float: right;
+    color: transparent;
+    min-height: 20px;
+    background: url(../images/icon-calendar.svg) no-repeat right center;
+    text-decoration: none;
+    padding: 5px 25px 5px 5px;
 
-      a
+    &:hover, &:focus
+    {
+      color: $blue;
+    }
+  }
+  &.show-list-view
+  {
+    .list-button,
+    .calendar-container
+    {
+      display: none;
+    }
+    .calendar-button,
+    & > .view-footer
+    {
+      display: block;
+    }
+  }
+  &
+  {
+    @media (max-width: 760px)
+    {
+      .list-button,
+      .calendar-button,
+      .calendar-container
       {
-        color: white;
-        font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.55);
-        font-size: 14px;
-        line-height: 1;
+        display: none;
       }
-      .calendar,
-      .view-item
+      & > .view-footer
       {
-        float: none !important;
-        margin: 0;
-      }
-      .item
-      {
-        padding: 0 8px 8px 8px;
+        display: block;
       }
     }
-    .empty
+  }
+
+  .fc-toolbar
+  {
+    display: none;
+  }
+  .fc-view-container
+  {
+    table
+    {
+      border: 0;
+    }
+    .fc-widget-content
+    {
+      border: 0;
+    }
+    .fc-head
+    {
+      display: none;
+    }
+    .fc-day-number
+    {
+      color: $blue;
+      float: none !important;
+      padding: 8px 10px;
+      display: block;
+      line-height: 1;
+    }
+    .fc-bg
+    {
+      td
+      {
+        border: 1px solid white;
+        background: #f2f5f6;
+      }
+      .has-event
+      {
+        background: $orange !important;
+        color: white;
+      }
+      .fc-today
+      {
+        position: relative;
+
+        &:before
+        {
+          content: "";
+          border: 2px solid $blue;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .has-event .fc-day-number
+    {
+      color: white;
+    }
+    .fc-event-container a
+    {
+      color: white;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.55);
+      font-size: 14px;
+      line-height: 1;
+      background: none;
+      border: 0;
+      margin: 0.25em 6px;
+
+      &:hover
+      {
+        text-decoration: underline;
+      }
+
+      .fc-content
+      {
+        white-space: normal;
+        overflow: visible;
+      }
+    }
+    .fc-other-month
     {
       font-size: 0;
       background: none !important;
       border: 0 !important;
+    }
+    .fc-scroller
+    {
+      overflow: visible !important;
+      height: auto;
     }
   }
 }
 
 .node--type-event
 {
-  .field--name-field-event-date p
+  .field--name-field-event-dates
   {
-    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+  }
+  .event-footer
+  {
+    margin-top: 1.5em;
   }
 }

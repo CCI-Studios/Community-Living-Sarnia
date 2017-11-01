@@ -16,7 +16,7 @@ third_party_settings:
 id: eventslistintro
 theme: clsl
 region: content
-weight: -13
+weight: -15
 provider: null
 plugin: 'block_content:99691122-c429-43b8-b0c8-552b7c7c559a'
 settings:
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/events\r\n/events/calendar*"
+    pages: "/events/calendar\r\n/events/calendar/*"
     negate: false
     context_mapping: {  }

@@ -1,0 +1,19 @@
+uuid: 4bdcfda2-7ecb-453a-9409-de05f0e0e3cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_end_time
+    - paragraphs.paragraphs_type.event_date
+id: paragraph.event_date.field_end_time
+field_name: field_end_time
+entity_type: paragraph
+bundle: event_date
+label: 'End time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

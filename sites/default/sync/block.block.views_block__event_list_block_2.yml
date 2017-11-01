@@ -1,9 +1,9 @@
-uuid: feeddcf2-3ccc-4c35-be23-78b287aed866
+uuid: 697ea964-5f0a-4045-be72-23319ec77782
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.events_list
+    - views.view.event_list
   module:
     - block_class
     - system
@@ -13,14 +13,14 @@ dependencies:
 third_party_settings:
   block_class:
     classes: block--home-events
-id: views_block__events_list_block_1
+id: views_block__event_list_block_2
 theme: clsl
 region: content
-weight: 1
+weight: -13
 provider: null
-plugin: 'views_block:events_list-block_1'
+plugin: 'views_block:event_list-block_2'
 settings:
-  id: 'views_block:events_list-block_1'
+  id: 'views_block:event_list-block_2'
   label: ''
   provider: views
   label_display: '0'

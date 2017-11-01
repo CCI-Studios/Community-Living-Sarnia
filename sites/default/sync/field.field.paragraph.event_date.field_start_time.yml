@@ -1,0 +1,19 @@
+uuid: 4faf93e7-a5f1-45d8-a65c-6a184e0b07c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_start_time
+    - paragraphs.paragraphs_type.event_date
+id: paragraph.event_date.field_start_time
+field_name: field_start_time
+entity_type: paragraph
+bundle: event_date
+label: 'Start time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

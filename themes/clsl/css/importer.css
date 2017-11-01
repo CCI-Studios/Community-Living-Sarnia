@@ -1326,12 +1326,14 @@ header {
     border-top-color: transparent;
     border-left-color: transparent; }
 
-.node--type-event.node--view-mode-teaser {
+.node--type-event.node--view-mode-teaser,
+.view-event-list .views-row {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative; }
-  .node--type-event.node--view-mode-teaser:before {
+  .node--type-event.node--view-mode-teaser:before,
+  .view-event-list .views-row:before {
     content: "";
     display: block;
     position: absolute;
@@ -1341,14 +1343,21 @@ header {
     height: 100%;
     background: black;
     opacity: 0.5; }
-  .node--type-event.node--view-mode-teaser:hover:before {
+  .node--type-event.node--view-mode-teaser:hover:before,
+  .view-event-list .views-row:hover:before {
     background: #002633;
     opacity: 0.6; }
-  .node--type-event.node--view-mode-teaser .field--name-field-image img {
+  .node--type-event.node--view-mode-teaser .field--name-field-image img,
+  .node--type-event.node--view-mode-teaser .views-field-field-image img,
+  .view-event-list .views-row .field--name-field-image img,
+  .view-event-list .views-row .views-field-field-image img {
     display: block;
     width: 100%;
     height: auto; }
-  .node--type-event.node--view-mode-teaser .field--name-field-event-date {
+  .node--type-event.node--view-mode-teaser .field--name-field-event-date,
+  .node--type-event.node--view-mode-teaser .views-field-field-event-date,
+  .view-event-list .views-row .field--name-field-event-date,
+  .view-event-list .views-row .views-field-field-event-date {
     margin-left: -30px;
     margin-bottom: 1em;
     padding-left: 30px;
@@ -1364,7 +1373,10 @@ header {
     font-size: 1.125em;
     -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.25)); }
-    .node--type-event.node--view-mode-teaser .field--name-field-event-date:after {
+    .node--type-event.node--view-mode-teaser .field--name-field-event-date:after,
+    .node--type-event.node--view-mode-teaser .views-field-field-event-date:after,
+    .view-event-list .views-row .field--name-field-event-date:after,
+    .view-event-list .views-row .views-field-field-event-date:after {
       content: "";
       display: block;
       position: absolute;
@@ -1372,7 +1384,8 @@ header {
       left: 100%;
       border: 25px solid transparent;
       border-left-color: #8dc63f; }
-  .node--type-event.node--view-mode-teaser .node__content {
+  .node--type-event.node--view-mode-teaser .node__content,
+  .view-event-list .views-row .node__content {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     color: white;
     line-height: 1.25;
@@ -1385,67 +1398,61 @@ header {
     box-sizing: border-box;
     padding: 30px 30px 0 30px;
     z-index: 1; }
-    .node--type-event.node--view-mode-teaser .node__content a {
+    .node--type-event.node--view-mode-teaser .node__content a,
+    .view-event-list .views-row .node__content a {
       color: white;
       text-decoration: none; }
-      .node--type-event.node--view-mode-teaser .node__content a:hover {
+      .node--type-event.node--view-mode-teaser .node__content a:hover,
+      .view-event-list .views-row .node__content a:hover {
         text-decoration: underline; }
-  .node--type-event.node--view-mode-teaser h2 {
+  .node--type-event.node--view-mode-teaser h2,
+  .view-event-list .views-row h2 {
     font-weight: 400;
     line-height: 1;
     font-size: 1.5em; }
-  .node--type-event.node--view-mode-teaser p, .node--type-event.node--view-mode-teaser .field--name-field-teaser {
+  .node--type-event.node--view-mode-teaser p, .node--type-event.node--view-mode-teaser .field--name-field-teaser, .node--type-event.node--view-mode-teaser .views-field-field-teaser,
+  .view-event-list .views-row p,
+  .view-event-list .views-row .field--name-field-teaser,
+  .view-event-list .views-row .views-field-field-teaser {
     font-size: 0.9375em;
     margin-top: 1em; }
-  .node--type-event.node--view-mode-teaser .view-event {
+  .node--type-event.node--view-mode-teaser .view-event,
+  .view-event-list .views-row .view-event {
     font-weight: bold;
     font-style: italic;
     font-size: 0.9em; }
 
-.view-events-list:after {
+.view-events-list:after,
+.view-event-list:after {
   content: "";
   display: block;
   clear: both; }
 
-.view-events-list .views-row {
+.view-events-list .views-row,
+.view-event-list .views-row {
   float: left;
   width: 30%;
   margin-left: 5%;
   margin-bottom: 5%; }
-  .view-events-list .views-row:nth-child(3n + 1) {
+  .view-events-list .views-row:nth-child(3n + 1),
+  .view-event-list .views-row:nth-child(3n + 1) {
     margin-left: 0;
     clear: left; }
   @media (max-width: 760px) {
-    .view-events-list .views-row {
+    .view-events-list .views-row,
+    .view-event-list .views-row {
       float: none;
       width: 100%;
       max-width: 320px;
       margin: 0 auto 20px auto; }
-      .view-events-list .views-row:nth-child(3n + 1) {
+      .view-events-list .views-row:nth-child(3n + 1),
+      .view-event-list .views-row:nth-child(3n + 1) {
         margin-left: auto; } }
 
-.view-events-list .view-footer {
+.view-events-list .view-footer,
+.view-event-list .view-footer {
   clear: both;
   text-align: center; }
-
-.view-events-list.view-display-id-page .view-header {
-  clear: both;
-  margin: 20px 0; }
-  .view-events-list.view-display-id-page .view-header:after {
-    content: "";
-    display: block;
-    clear: both; }
-
-.view-events-list.view-display-id-page .calendar-button {
-  float: right;
-  display: block;
-  color: transparent;
-  min-height: 20px;
-  background: url(../images/icon-calendar.svg) no-repeat right center;
-  text-decoration: none;
-  padding: 5px 25px 5px 5px; }
-  .view-events-list.view-display-id-page .calendar-button:hover, .view-events-list.view-display-id-page .calendar-button:focus {
-    color: #0099cc; }
 
 .view-events-calendar {
   clear: both;
@@ -1463,58 +1470,104 @@ header {
       font-size: 1.5em;
       float: left;
       margin-bottom: 0; }
-    .view-events-calendar .view-header .list-button {
-      float: right;
-      display: block;
-      color: transparent;
-      min-height: 18px;
-      background: url(../images/icon-grid.svg) no-repeat right center;
-      text-decoration: none;
-      padding: 5px 25px 5px 5px; }
-      .view-events-calendar .view-header .list-button:hover, .view-events-calendar .view-header .list-button:focus {
-        color: #0099cc; }
     .view-events-calendar .view-header .pager ul {
       margin: 0; }
-  .view-events-calendar .calendar-calendar .inner div {
-    background: none; }
-  .view-events-calendar .calendar-calendar thead, .view-events-calendar .calendar-calendar th {
+  .view-events-calendar > .view-footer {
     display: none; }
-  .view-events-calendar .calendar-calendar td {
-    border-color: white;
-    background: #f2f5f6;
-    text-align: left; }
-  .view-events-calendar .calendar-calendar .single-day {
-    height: 100px;
-    vertical-align: bottom !important; }
-  .view-events-calendar .calendar-calendar .day {
-    float: none; }
-  .view-events-calendar .calendar-calendar .today {
-    border-color: #0099cc !important;
-    background: #f2f5f6 !important; }
-  .view-events-calendar .calendar-calendar .date-box {
-    color: #0099cc; }
-  .view-events-calendar .calendar-calendar .has-event {
+  .view-events-calendar > .view-content > .views-row {
+    display: none; }
+  .view-events-calendar .list-button {
+    float: right;
+    display: block;
+    color: transparent;
+    min-height: 20px;
+    background: url(../images/icon-grid.svg) no-repeat right center;
+    text-decoration: none;
+    padding: 5px 25px 5px 5px; }
+    .view-events-calendar .list-button:hover, .view-events-calendar .list-button:focus {
+      color: #0099cc; }
+  .view-events-calendar .calendar-button {
+    display: none;
+    float: right;
+    color: transparent;
+    min-height: 20px;
+    background: url(../images/icon-calendar.svg) no-repeat right center;
+    text-decoration: none;
+    padding: 5px 25px 5px 5px; }
+    .view-events-calendar .calendar-button:hover, .view-events-calendar .calendar-button:focus {
+      color: #0099cc; }
+  .view-events-calendar.show-list-view .list-button,
+  .view-events-calendar.show-list-view .calendar-container {
+    display: none; }
+  .view-events-calendar.show-list-view .calendar-button,
+  .view-events-calendar.show-list-view > .view-footer {
+    display: block; }
+  @media (max-width: 760px) {
+    .view-events-calendar .list-button,
+    .view-events-calendar .calendar-button,
+    .view-events-calendar .calendar-container {
+      display: none; }
+    .view-events-calendar > .view-footer {
+      display: block; } }
+  .view-events-calendar .fc-toolbar {
+    display: none; }
+  .view-events-calendar .fc-view-container table {
+    border: 0; }
+  .view-events-calendar .fc-view-container .fc-widget-content {
+    border: 0; }
+  .view-events-calendar .fc-view-container .fc-head {
+    display: none; }
+  .view-events-calendar .fc-view-container .fc-day-number {
+    color: #0099cc;
+    float: none !important;
+    padding: 8px 10px;
+    display: block;
+    line-height: 1; }
+  .view-events-calendar .fc-view-container .fc-bg td {
+    border: 1px solid white;
+    background: #f2f5f6; }
+  .view-events-calendar .fc-view-container .fc-bg .has-event {
     background: #e35525 !important;
     color: white; }
-    .view-events-calendar .calendar-calendar .has-event a {
-      color: white;
-      font-weight: bold;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
-      font-size: 14px;
-      line-height: 1; }
-    .view-events-calendar .calendar-calendar .has-event .calendar,
-    .view-events-calendar .calendar-calendar .has-event .view-item {
-      float: none !important;
-      margin: 0; }
-    .view-events-calendar .calendar-calendar .has-event .item {
-      padding: 0 8px 8px 8px; }
-  .view-events-calendar .calendar-calendar .empty {
+  .view-events-calendar .fc-view-container .fc-bg .fc-today {
+    position: relative; }
+    .view-events-calendar .fc-view-container .fc-bg .fc-today:before {
+      content: "";
+      border: 2px solid #0099cc;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0; }
+  .view-events-calendar .fc-view-container .has-event .fc-day-number {
+    color: white; }
+  .view-events-calendar .fc-view-container .fc-event-container a {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+    font-size: 14px;
+    line-height: 1;
+    background: none;
+    border: 0;
+    margin: 0.25em 6px; }
+    .view-events-calendar .fc-view-container .fc-event-container a:hover {
+      text-decoration: underline; }
+    .view-events-calendar .fc-view-container .fc-event-container a .fc-content {
+      white-space: normal;
+      overflow: visible; }
+  .view-events-calendar .fc-view-container .fc-other-month {
     font-size: 0;
     background: none !important;
     border: 0 !important; }
+  .view-events-calendar .fc-view-container .fc-scroller {
+    overflow: visible !important;
+    height: auto; }
 
-.node--type-event .field--name-field-event-date p {
-  margin-bottom: 1.5em; }
+.node--type-event .field--name-field-event-dates {
+  margin-top: 1.5em; }
+
+.node--type-event .event-footer {
+  margin-top: 1.5em; }
 
 .block--newsletter-subscription {
   clear: both;
