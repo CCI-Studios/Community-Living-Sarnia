@@ -685,7 +685,8 @@ header {
     top: 50%;
     margin-top: -30px;
     z-index: 2;
-    padding: 0; }
+    padding: 0;
+    border: 0; }
     .view-header-images .slick-arrow:before, .view-header-images .slick-arrow:after {
       display: none; }
     .view-header-images .slick-arrow:hover {
