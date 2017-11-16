@@ -38,7 +38,7 @@
         }
       }
 
-      & > a
+      & > a, & > span
       {
         color: $blue;
         text-transform: uppercase;
@@ -65,7 +65,7 @@
           }
         }
       }
-      &:hover > a
+      &:hover > a, , &:hover > span
       {
         color: $green;
         font-weight: bold;

@@ -527,7 +527,7 @@ header {
     @media (max-width: 760px) {
       .block--main-menu > .menu > li {
         float: none; } }
-    .block--main-menu > .menu > li > a {
+    .block--main-menu > .menu > li > a, .block--main-menu > .menu > li > span {
       color: #0099cc;
       text-transform: uppercase;
       text-decoration: none;
@@ -535,22 +535,22 @@ header {
       padding: 30px 10px;
       line-height: 1; }
       @media (max-width: 760px) {
-        .block--main-menu > .menu > li > a {
+        .block--main-menu > .menu > li > a, .block--main-menu > .menu > li > span {
           padding: 18px 25px;
           background: #0099cc;
           color: white;
           text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
           font-weight: bold;
           border-bottom: 1px solid #3dafd6; }
-          .block--main-menu > .menu > li > a:hover {
+          .block--main-menu > .menu > li > a:hover, .block--main-menu > .menu > li > span:hover {
             background: #8dc63f; } }
-    .block--main-menu > .menu > li:hover > a {
+    .block--main-menu > .menu > li:hover > a, .block--main-menu > .menu > li:hover > span {
       color: #8dc63f;
       font-weight: bold;
       padding: 23px 10px 30px 10px;
       border-bottom: 7px solid #0099cc; }
       @media (max-width: 760px) {
-        .block--main-menu > .menu > li:hover > a {
+        .block--main-menu > .menu > li:hover > a, .block--main-menu > .menu > li:hover > span {
           border-bottom: 1px solid #3dafd6;
           font-weight: bold;
           padding: 18px 25px;
