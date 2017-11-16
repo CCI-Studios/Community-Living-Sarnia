@@ -1,9 +1,9 @@
-uuid: b6bb52ca-2b36-4a7e-b834-df5758208867
+uuid: b1d52aff-fec7-40f0-9601-b02d086e3328
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:cd2547b0-7a22-4441-b7b2-05aae8be8d7b'
+    - 'block_content:title:b5c28ac7-911c-410e-9074-7da647200066'
   module:
     - block_class
     - block_content
@@ -12,16 +12,16 @@ dependencies:
     - clsl
 third_party_settings:
   block_class:
-    classes: 'block--page-title block--contact-page-title'
-id: contactpagetitle
+    classes: 'block--page-title block--services-page-title'
+id: servicestitle
 theme: clsl
 region: before_content
 weight: 0
 provider: null
-plugin: 'block_content:cd2547b0-7a22-4441-b7b2-05aae8be8d7b'
+plugin: 'block_content:b5c28ac7-911c-410e-9074-7da647200066'
 settings:
-  id: 'block_content:cd2547b0-7a22-4441-b7b2-05aae8be8d7b'
-  label: 'Contact page title'
+  id: 'block_content:b5c28ac7-911c-410e-9074-7da647200066'
+  label: 'Services title'
   provider: block_content
   label_display: '0'
   status: true
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /contact
+    pages: '/services/*'
     negate: false
     context_mapping: {  }

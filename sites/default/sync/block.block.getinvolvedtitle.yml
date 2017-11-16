@@ -1,9 +1,9 @@
-uuid: b41f63c5-892c-4a37-8185-6f2b7b8101fd
+uuid: fd312b14-f8da-4aec-83e5-1f8acd1b86ce
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:7b4001a6-153f-45bd-83a9-d58f6819a781'
+    - 'block_content:title:138f501b-3756-45b4-b718-208a2250c07f'
   module:
     - block_class
     - block_content
@@ -12,16 +12,16 @@ dependencies:
     - clsl
 third_party_settings:
   block_class:
-    classes: 'block--page-title block--services-page-title'
-id: servicespagetitle
+    classes: ''
+id: getinvolvedtitle
 theme: clsl
 region: before_content
-weight: -10
+weight: 0
 provider: null
-plugin: 'block_content:7b4001a6-153f-45bd-83a9-d58f6819a781'
+plugin: 'block_content:138f501b-3756-45b4-b718-208a2250c07f'
 settings:
-  id: 'block_content:7b4001a6-153f-45bd-83a9-d58f6819a781'
-  label: 'Services page title'
+  id: 'block_content:138f501b-3756-45b4-b718-208a2250c07f'
+  label: 'Get Involved title'
   provider: block_content
   label_display: '0'
   status: true
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/services/*'
+    pages: '/get-involved/*'
     negate: false
     context_mapping: {  }

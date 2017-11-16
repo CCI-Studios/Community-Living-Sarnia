@@ -815,15 +815,6 @@ header {
       .block--page-title .page-title {
         font-size: 3em; } }
 
-.block--resources-page-title {
-  background-image: url(../images/bg-resources.jpg); }
-
-.block--contact-page-title {
-  background-image: url(../images/bg-contact.jpg); }
-
-.block--partners-page-title {
-  background-image: url(../images/bg-partners.jpg); }
-
 .block--sidebar-menu .menu {
   list-style: none;
   margin: 0; }

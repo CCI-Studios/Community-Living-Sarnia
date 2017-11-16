@@ -20,12 +20,12 @@ provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: 'Page title (default)'
   provider: core
   label_display: '0'
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/resources/*\r\n/services/*\r\n/contact\r\n/events\r\n/events/calendar*\r\n/partners"
+    pages: "<front>\r\n/resources/*\r\n/services/*\r\n/contact\r\n/events\r\n/events/calendar*\r\n/about/*\r\n/get-involved/*\r\n/partners/*"
     negate: true
     context_mapping: {  }

@@ -5,6 +5,7 @@ module:
   block: 0
   block_class: 0
   block_content: 0
+  block_type_templates: 0
   breakpoint: 0
   calendar: 0
   calendar_datetime: 0
