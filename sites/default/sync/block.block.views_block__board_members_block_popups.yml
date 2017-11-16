@@ -16,7 +16,7 @@ third_party_settings:
 id: views_block__board_members_block_popups
 theme: clsl
 region: content
-weight: -10
+weight: 3
 provider: null
 plugin: 'views_block:board_members-block_popups'
 settings:

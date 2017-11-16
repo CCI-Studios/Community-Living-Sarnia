@@ -16,7 +16,7 @@ third_party_settings:
 id: views_block__board_members_block_teasers
 theme: clsl
 region: content
-weight: -11
+weight: 2
 provider: null
 plugin: 'views_block:board_members-block_teasers'
 settings:
