@@ -42,7 +42,7 @@ settings:
         -
           name: Media
           items:
-            - ImceImage
+            - DrupalImage
             - Table
             - HorizontalRule
         -
@@ -55,7 +55,7 @@ settings:
     stylescombo:
       styles: ''
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ''
