@@ -48,9 +48,9 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {% if content.field_link %}<a href="{{ paragraph.field_link.0.value.uri }}" target="_blank">{% endif %}
+      {% if content.field_link.0 %}<a href="{{ paragraph.field_link.0.value.uri }}" target="_blank">{% endif %}
         {{ content|without("field_link") }}
-      {% if content.field_link %}</a>{% endif %}
+      {% if content.field_link.0 %}</a>{% endif %}
     {% endblock %}
   </div>
 {% endblock paragraph %}
