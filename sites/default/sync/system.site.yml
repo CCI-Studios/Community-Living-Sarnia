@@ -1,6 +1,6 @@
 uuid: 29c53cc8-3966-4b6d-959b-4a1d39176c64
 name: 'Community Living Sarnia'
-mail: cmorris@ccistudios.com
+mail: info@communitylivingsarnia.org
 slogan: ''
 page:
   403: ''
@@ -12,3 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+mail_notification: ''

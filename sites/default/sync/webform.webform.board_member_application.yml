@@ -129,9 +129,9 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: tgascoigne@ccistudios.com
+      to_mail: jhagens@communitylivingsarnia.org
       to_options: {  }
-      cc_mail: cmorris@ccistudios.com
+      cc_mail: kingch@live.ca
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
