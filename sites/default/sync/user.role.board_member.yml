@@ -1,0 +1,10 @@
+uuid: 737583c5-3bbf-4e08-93c1-9e85cdbedb1f
+langcode: en
+status: true
+dependencies: {  }
+id: board_member
+label: 'Board member'
+weight: 3
+is_admin: null
+permissions:
+  - 'view search api pages'

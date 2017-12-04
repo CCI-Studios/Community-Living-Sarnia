@@ -1,0 +1,10 @@
+content_access_roles_gids:
+  anonymous: 1
+  authenticated: 2
+  administrator: 3
+  board_member: 4
+  super_administrator: 5
+_core:
+  default_config_hash: 7LkiviGITIpniIOOIzpuxR7r4XzqqYN_cwu0fb0kx1M
+content_access_node_type:
+  advanced_page: 'a:2:{s:4:"view";a:4:{i:0;s:9:"anonymous";i:1;s:13:"authenticated";i:2;s:13:"administrator";i:3;s:19:"super_administrator";}s:8:"per_node";i:1;}'

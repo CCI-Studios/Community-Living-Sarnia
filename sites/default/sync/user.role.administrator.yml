@@ -7,5 +7,27 @@ _core:
 id: administrator
 label: Administrator
 weight: 2
-is_admin: true
-permissions: {  }
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'access webform overview'
+  - 'administer blocks'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'delete any advanced_page content'
+  - 'delete own advanced_page content'
+  - 'edit any advanced_page content'
+  - 'edit own advanced_page content'
+  - 'manipulate all entityqueues'
+  - 'manipulate entityqueues'
+  - 'schedule publishing of nodes'
+  - 'use text format full_html'
+  - 'view any webform submission'
+  - 'view own unpublished content'
+  - 'view search api pages'
+  - 'view the administration theme'
