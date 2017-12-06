@@ -1,4 +1,0 @@
-[30-Nov-2017 16:20:33 UTC] PHP Warning:  require(/home/clsl/subdomains/live/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/clsl/subdomains/live/public_html/autoload.php on line 14
-[30-Nov-2017 16:20:33 UTC] PHP Fatal error:  require(): Failed opening required '/home/clsl/subdomains/live/public_html/vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/clsl/subdomains/live/public_html/autoload.php on line 14
-[30-Nov-2017 16:20:34 UTC] PHP Warning:  require(/home/clsl/subdomains/live/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/clsl/subdomains/live/public_html/autoload.php on line 14
-[30-Nov-2017 16:20:34 UTC] PHP Fatal error:  require(): Failed opening required '/home/clsl/subdomains/live/public_html/vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/clsl/subdomains/live/public_html/autoload.php on line 14

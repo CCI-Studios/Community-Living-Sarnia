@@ -59,8 +59,8 @@ settings:
   draft_saved_message: ''
   draft_loaded_message: ''
   confirmation_type: page
-  confirmation_title: ''
-  confirmation_message: ''
+  confirmation_title: 'Thank You. Please submit a copy of your resume in support of your application.'
+  confirmation_message: "<p>While we thank all applicants for their interest, only those selected for an interview will be contacted.</p>\r\n\r\n<p><a class=\"button\" href=\"mailto:resumes@communitylivingsarnia.org\">Send a Resume</a></p>"
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
