@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: board_member
-label: 'Board member'
+label: Staff
 weight: 3
 is_admin: null
 permissions:
