@@ -123,7 +123,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: info@communitylivingsarnia.org
+      to_mail: resumes@communitylivingsarnia.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
