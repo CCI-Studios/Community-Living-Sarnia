@@ -439,10 +439,10 @@ header {
 .block--social-menu {
   float: left;
   margin-left: 25px; }
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
     .block--social-menu {
       margin-left: 20px; } }
-  @media (max-width: 335px) {
+  @media (max-width: 380px) {
     .block--social-menu {
       margin-left: 10px; } }
   .block--social-menu .menu {
@@ -456,12 +456,12 @@ header {
       @media (max-width: 1140px) {
         .block--social-menu .menu li {
           margin-right: 15px; } }
-      @media (max-width: 400px) {
+      @media (max-width: 480px) {
         .block--social-menu .menu li {
-          margin-right: 12px; } }
-      @media (max-width: 335px) {
+          margin-right: 8px; } }
+      @media (max-width: 380px) {
         .block--social-menu .menu li {
-          margin-right: 10px; } }
+          margin-right: 0; } }
     .block--social-menu .menu a {
       display: block;
       padding-left: 30px;
@@ -484,6 +484,8 @@ header {
     .block--social-menu .menu .in {
       background-image: url(../images/social-in-blue.svg);
       padding-left: 27px; }
+    .block--social-menu .menu .ig {
+      background-image: url(../images/social-ig-blue.svg); }
 
 .block--login-link {
   float: left;
@@ -926,6 +928,8 @@ header {
   .block--footer-social-menu .menu .in {
     background-image: url(../images/social-in-white.svg);
     padding-left: 31px; }
+  .block--footer-social-menu .menu .ig {
+    background-image: url(../images/social-ig-white.svg); }
 
 .block--footer-menu {
   overflow: hidden; }
