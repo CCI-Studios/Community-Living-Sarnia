@@ -72,19 +72,17 @@ function login_destination_toolbar_alter(&$items) {
   $items['user']['tray']['user_links']['#cache']['max-age'] = 0;
 
   if (\Drupal::currentUser()->isAnonymous()) {
-    $url_login = Url::fromRoute('user.login');
-    // Change route name, since route "user.page" always redirects to "user.login".
-    $items['user']['tray']['user_links']['#links']['login']['url'] = $url_login;
     $url = &$items['user']['tray']['user_links']['#links']['login']['url'];
-  }
-  else {
-    $url = &$items['user']['tray']['user_links']['#links']['logout']['url'];
-  }
-  // Get current path.
-  $current = \Drupal::service('path.current')->getPath();
 
-  // Add current param to be able to evaluate previous page.
-  $url->setOptions(['query' => ['current' => $current]]);
+    // Change route name, since route "user.page" always redirects to "user.login".
+    $url = Url::fromRoute('user.login');
+
+    // Get current path.
+    $current = \Drupal::service('path.current')->getPath();
+
+    // Add current param to be able to evaluate previous page.
+    $url->setOptions(['query' => ['current' => $current]]);
+  }
 }
 
 /**
@@ -97,9 +95,14 @@ function login_destination_link_alter(&$variables) {
   ];
   /* @var Drupal\Core\Url $url */
   $url = $variables['url'];
-  if ($url->isExternal() || !in_array($url->getRouteName(), $routes)) {
+  if ($url->isExternal()) {
     return;
   }
+
+  if ($url->isRouted() && !in_array($url->getRouteName(), $routes)) {
+    return;
+  }
+
   // Get current path.
   $current = \Drupal::service('path.current')->getPath();
   $variables['options']['query']['current'] = $current;
