@@ -2,6 +2,7 @@
 
 namespace Drupal\webform\Tests\Element;
 
+use Drupal\Core\Url;
 use Drupal\file\Entity\File;
 use Drupal\webform\Entity\WebformSubmission;
 
@@ -16,12 +17,18 @@ class WebformElementManagedFilePrivateTest extends WebformElementManagedFileTest
    * Test private files.
    */
   public function testPrivateFiles() {
+    $admin_submission_user = $this->drupalCreateUser([
+      'administer webform submission',
+    ]);
+
+    /**************************************************************************/
+
     $elements = $this->webform->getElementsDecoded();
     $elements['managed_file_single']['#uri_scheme'] = 'private';
     $this->webform->setElements($elements);
     $this->webform->save();
 
-    $this->drupalLogin($this->adminSubmissionUser);
+    $this->drupalLogin($admin_submission_user);
 
     // Upload private file as authenticated user.
     $edit = [
@@ -54,7 +61,17 @@ class WebformElementManagedFilePrivateTest extends WebformElementManagedFileTest
     // Check private file access redirects to user login page with destination.
     $this->drupalGet(file_create_url($file->getFileUri()));
     $this->assertResponse(200);
-    $this->assertUrl('user/login', ['query' => ['destination' => 'system/files/webform/test_element_managed_file/' . $sid . '/' . $this->files[0]->filename]]);
+
+    $destination_url = Url::fromUri('base://system/files', [
+      'query' => [
+        'file' => 'webform/test_element_managed_file/' . $sid . '/' . $this->files[0]->filename,
+      ],
+    ]);
+    $this->assertUrl('user/login', [
+      'query' => [
+        'destination' => $destination_url->toString(),
+      ],
+    ]);
 
     // Upload private file and preview as anonymous user.
     $edit = [
@@ -73,7 +90,7 @@ class WebformElementManagedFilePrivateTest extends WebformElementManagedFileTest
     $this->assertResponse(403);
 
     // Check that authenticated user can't access temp file.
-    $this->drupalLogin($this->adminSubmissionUser);
+    $this->drupalLogin($admin_submission_user);
     $this->drupalGet($temp_file_uri);
     $this->assertResponse(403);
 

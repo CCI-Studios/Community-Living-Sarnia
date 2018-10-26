@@ -40,7 +40,7 @@ class DateTime extends DateBase {
       }
     }
 
-    return parent::getDefaultProperties() + [
+    return [
       // Date settings.
       'date_date_format' => $date_format,
       'date_date_element' => 'date',
@@ -52,7 +52,7 @@ class DateTime extends DateBase {
       'date_time_min' => '',
       'date_time_max' => '',
       'date_time_step' => '',
-    ];
+    ] + parent::getDefaultProperties();
   }
 
   /**
@@ -96,7 +96,7 @@ class DateTime extends DateBase {
     // Prepare element after date/time formats have been updated.
     parent::prepare($element, $webform_submission);
 
-    $element['#after_build'][] = [get_class($this), 'afterBuild'];
+    $element['#after_build'][] = [get_class($this), 'afterBuildDateTime'];
   }
 
   /**
@@ -166,7 +166,7 @@ class DateTime extends DateBase {
     $form['date']['date_date_element_none_warning'] = [
       '#type' => 'webform_message',
       '#message_type' => 'warning',
-      '#message_message' => $this->t('You should consider using a dedicated Time element, instead of this Date/time element, which will preprend the current date to the submitted time.'),
+      '#message_message' => $this->t('You should consider using a dedicated Time element, instead of this Date/time element, which will prepend the current date to the submitted time.'),
       '#access' => TRUE,
       '#states' => [
         'visible' => [
@@ -184,8 +184,8 @@ class DateTime extends DateBase {
         'D, m/d/Y' => $this->t('Medium date - @format (@date)', ['@format' => 'D, m/d/Y', '@date' => date('D, m/d/Y')]),
         'm/d/Y' => $this->t('Short date - @format (@date)', ['@format' => 'm/d/Y', '@date' => date('m/d/Y')]),
       ],
-      '#other__option_label' => $this->t('Custom...'),
-      '#other__placeholder' => $this->t('Custom date format...'),
+      '#other__option_label' => $this->t('Custom…'),
+      '#other__placeholder' => $this->t('Custom date format…'),
       '#other__description' => $this->t('Enter date format using <a href="http://php.net/manual/en/function.date.php">Date Input Format</a>.'),
       '#states' => [
         'visible' => [
@@ -223,6 +223,7 @@ class DateTime extends DateBase {
       '#title' => $this->t('Date increment'),
       '#description' => $this->t("The increment to use for minutes and seconds, i.e. '15' would show only :00, :15, :30 and :45. Used for HTML5 step values and jQueryUI (fallback) datepicker settings. Defaults to 1 to show every minute."),
       '#min' => 1,
+      '#attributes' => ['data-webform-states-no-clear' => TRUE],
       '#states' => [
         'invisible' => [
           [':input[name="properties[date_date_element]"]' => ['value' => 'datetime']],
@@ -267,11 +268,11 @@ class DateTime extends DateBase {
         'g:i:s A' => $this->t('12 hour with seconds - @format (@time)', ['@format' => 'g:i:s A', '@time' => date('g:i:s A')]),
         'g:i A' => $this->t('12 hour - @format (@time)', ['@format' => 'g:i A', '@time' => date('g:i A')]),
       ],
-      '#other__option_label' => $this->t('Custom...'),
-      '#other__placeholder' => $this->t('Custom time format...'),
+      '#other__option_label' => $this->t('Custom…'),
+      '#other__placeholder' => $this->t('Custom time format…'),
       '#other__description' => $this->t('Enter time format using <a href="http://php.net/manual/en/function.date.php">Time Input Format</a>.'),
       '#states' => [
-        'invisible'  => [
+        'invisible' => [
           [':input[name="properties[date_date_element]"]' => ['value' => 'datetime']],
           'or',
           [':input[name="properties[date_date_element]"]' => ['value' => 'datetime-local']],
@@ -288,7 +289,7 @@ class DateTime extends DateBase {
       '#title' => $this->t('Time min'),
       '#description' => $this->t('Specifies the minimum time.'),
       '#states' => [
-        'invisible'  => [
+        'invisible' => [
           [':input[name="properties[date_time_element]"]' => ['value' => 'none']],
         ],
       ],
@@ -298,7 +299,7 @@ class DateTime extends DateBase {
       '#title' => $this->t('Time max'),
       '#description' => $this->t('Specifies the maximum time.'),
       '#states' => [
-        'invisible'  => [
+        'invisible' => [
           [':input[name="properties[date_time_element]"]' => ['value' => 'none']],
         ],
       ],
@@ -379,7 +380,7 @@ class DateTime extends DateBase {
   /**
    * After build handler for Datetime elements.
    */
-  public static function afterBuild(array $element, FormStateInterface $form_state) {
+  public static function afterBuildDateTime(array $element, FormStateInterface $form_state) {
     if (isset($element['time'])) {
       if (!empty($element['#date_time_min'])) {
         $element['time']['#min'] = $element['#date_time_min'];
