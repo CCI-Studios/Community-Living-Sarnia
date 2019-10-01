@@ -1,0 +1,16 @@
+uuid: f0ea1046-2c89-469f-a880-7f1ed7b6b11e
+langcode: en
+status: true
+dependencies: {  }
+name: board_member
+label: 'Board member'
+triggers:
+  login: login
+  one-time-login: one-time-login
+destination_path: 'internal:/board-members-area'
+pages_type: 0
+pages: ''
+roles:
+  board_member1: board_member1
+weight: 0
+enabled: true

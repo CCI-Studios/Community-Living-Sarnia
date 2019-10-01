@@ -1,0 +1,25 @@
+uuid: 9a60d2c3-7a0e-41de-bb67-ad14761f59b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.advanced_page.field_keywords
+    - field.field.node.advanced_page.field_sections
+    - node.type.advanced_page
+  module:
+    - user
+id: node.advanced_page.teaser
+targetEntityType: node
+bundle: advanced_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_keywords: true
+  field_sections: true
+  search_api_excerpt: true

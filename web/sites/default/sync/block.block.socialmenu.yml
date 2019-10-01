@@ -1,0 +1,29 @@
+uuid: 065d79b4-7eb9-43b6-9fda-b673e37dab76
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-menu
+  module:
+    - block_class
+    - system
+  theme:
+    - clsl
+third_party_settings:
+  block_class:
+    classes: block--social-menu
+id: socialmenu
+theme: clsl
+region: top
+weight: -9
+provider: null
+plugin: 'system_menu_block:social-menu'
+settings:
+  id: 'system_menu_block:social-menu'
+  label: 'Social menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 2b9f16ef-655e-4796-a8d3-f97a81530e72
+langcode: en
+status: true
+dependencies: {  }
+id: provinces
+label: Provinces
+category: Geographic
+likert: false
+options: "AB: Alberta\nBC: 'British Columbia'\nMB: Manitoba\nNB: 'New Brunswick'\nNL: 'Newfoundland and Labrador'\nNT: 'Northwest Territories'\nNS: 'Nova Scotia'\nNU: Nunavut\n'ON': Ontario\nPE: 'Prince Edward Island'\nQC: Quebec\nSK: Saskatchewan\nYT: Yukon\n"

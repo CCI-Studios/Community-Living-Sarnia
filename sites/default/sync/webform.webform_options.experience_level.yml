@@ -1,8 +1,0 @@
-uuid: 46b67d3f-8887-4325-a035-0c36c94684c2
-langcode: en
-status: true
-dependencies: {  }
-id: experience_level
-label: 'Experience level'
-category: General
-options: "very: 'Very Experienced'\nsome: 'Some Experience'\nlittle: 'Little or No Experience'\n"

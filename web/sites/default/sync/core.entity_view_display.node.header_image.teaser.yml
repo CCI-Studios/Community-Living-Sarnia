@@ -1,0 +1,33 @@
+uuid: 5c266a2b-2dbb-49dc-8fdc-cfd629bcb38b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.header_image.body
+    - field.field.node.header_image.field_header_image
+    - node.type.header_image
+  module:
+    - text
+    - user
+id: node.header_image.teaser
+targetEntityType: node
+bundle: header_image
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_header_image: true
+  search_api_excerpt: true
