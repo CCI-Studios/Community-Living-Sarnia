@@ -34,7 +34,6 @@
     showMarkerLatLng({lat:42.9890084,lng:-82.389485}, "<div class='location location-green'><h2>Job Path</h2><p>660 Oakdale Avenue,<br>Sarnia, ON<br>N7V 2A9<br>519-332-4004</p></div>");
     showMarkerLatLng({lat:42.9850422,lng:-82.3866568}, "<div class='location location-blue'><h2>Community Living</h2><p>551 Exmouth St,<br>Sarnia, ON,<br>N7T 5P6<br>519-332-0560</p></div>");
     showMarkerLatLng({lat:42.9679277,lng:-82.3699323}, "<div class='location location-orange'><h2>Activity Centre</h2><p>1091 Wellington St,<br>Sarnia, ON<br>N7S 1E5<br>519-337-9080</p></div>");
-    showMarkerLatLng({lat:42.9574179,lng:-82.3614117}, "<div class='location location-yellow'><h2>Wawanosh</h2><p><strong>(Lougar)</strong><br>1315 Lougar Ave,<br>Sarnia, ON<br>N7S 5N5<br>519-336-9825</p></div>");
     showMarkerLatLng({lat:42.9611777,lng:-82.3829841}, "<div class='location location-purple'><h2>Wawanosh</h2><p><strong>(Confederation)</strong><br>822 Confederation St.<br>Sarnia, ON<br>N7T 2E3<br>519-332-1707</p></div>");
   }
   function showMarkerLatLng(latlng, content)
